@@ -8,18 +8,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-search@2.9.7/dist/leaflet-search.min.css" />
     <link rel="stylesheet" href="map.css" />
-    <style>
-        #map-selector {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.85);
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-    </style>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Novymap">
@@ -28,15 +16,6 @@
 </head>
 <body>
     <div id="map"></div>
-
-    <div id="map-selector">
-        <label for="mapSelect">Map:</label>
-        <select id="mapSelect">
-            <option value="map-journey.jpg" selected>Journey</option>
-            <option value="map-dyna.jpg">Dynamap</option>
-        </select>
-    </div>
-
     <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
 
@@ -112,8 +91,6 @@
                     const lines = set.lines || {};
                     Object.values(lines).forEach(line => {
                         if (!Array.isArray(line.points)) return;
-
-                        // Transform world X/Z coordinates into map lat/lng
                         const points = line.points.map(p => {
                             const x = Number(p[0]);
                             const z = Number(p[1]);
@@ -122,7 +99,6 @@
                         }).filter(Boolean);
 
                         if (!points.length) return;
-
                         trenLines.push({
                             name: line.label || '',
                             color: line.color || '#ffffff',
@@ -136,20 +112,53 @@
         }
 
         function initMap(pois, trenLines) {
-            var map = L.map('map', { minZoom: 4, maxZoom: 18 }).setView([0, 0], 5);
             var bounds = [[-20.48, -20.48], [20.48, 20.48]];
+            var map = L.map('map', {
+                crs: L.CRS.Simple,
+                minZoom: 4,
+                maxZoom: 12
+            });
+            map.fitBounds(bounds);
             var currentOverlay = L.imageOverlay('map-journey.jpg', bounds).addTo(map);
 
-            var mapSelect = document.getElementById('mapSelect');
-            if (mapSelect) {
-                mapSelect.addEventListener('change', function (e) {
-                    if (currentOverlay) {
-                        map.removeLayer(currentOverlay);
-                    }
-                    var selected = e.target.value;
-                    currentOverlay = L.imageOverlay(selected, bounds).addTo(map);
-                });
-            }
+            var MapSelectorControl = L.Control.extend({
+                options: {
+                    position: 'topright'
+                },
+                onAdd: function (mapInstance) {
+                    var container = L.DomUtil.create('div', 'leaflet-control map-selector-control');
+
+                    var label = L.DomUtil.create('label', '', container);
+                    label.setAttribute('for', 'mapSelect');
+                    label.innerHTML = 'Map:&nbsp;';
+
+                    var select = L.DomUtil.create('select', '', container);
+                    select.id = 'mapSelect';
+
+                    var optionJourney = L.DomUtil.create('option', '', select);
+                    optionJourney.value = 'map-journey.jpg';
+                    optionJourney.selected = true;
+                    optionJourney.innerHTML = 'Journey';
+
+                    var optionDyna = L.DomUtil.create('option', '', select);
+                    optionDyna.value = 'map-dyna.jpg';
+                    optionDyna.innerHTML = 'Dynamap';
+
+                    L.DomEvent.disableClickPropagation(container);
+
+                    select.addEventListener('change', function (e) {
+                        if (currentOverlay) {
+                            mapInstance.removeLayer(currentOverlay);
+                        }
+                        var selected = e.target.value;
+                        currentOverlay = L.imageOverlay(selected, bounds).addTo(mapInstance);
+                    });
+
+                    return container;
+                }
+            });
+
+            map.addControl(new MapSelectorControl());
 
             L.rectangle([[20, 20], [-20, -20]], { color: '#911', fill: false }).addTo(map).bindPopup("World Border");
 
