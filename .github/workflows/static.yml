@@ -31,6 +31,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      # Replace map-dyna.jpg with remote image before deployment
+      - name: Replace map-dyna.jpg with remote image
+        run: |
+          curl -L https://novy.pigwin.eu/final_image.jpg -o map-dyna.jpg
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
