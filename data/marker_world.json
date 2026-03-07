@@ -7751,7 +7751,16 @@
                     "z": "19980",
                     "icon": "building",
                     "info": "border"
-                }
+                },
+                "986": {
+                    "label": "southeast",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">southeast<\/h1><div class=\"dial-bar\"><\/div><p  class=\"dial-dial\">\/dial southeast<\/p><p  class=\"dial-info\"><\/p><p  class=\"dial-wiki\"><a href=\"\"><\/a><\/p><p  class=\"dial-coord\">X : 13357 Y : 64 Z : -19935<br> ID : 446 Added by : Who?<\/p><\/div>",
+                    "x": "20000",
+                    "y": "64",
+                    "z": "20000",
+                    "icon": "building",
+                    "info": "southeast"
+                },
             }
         },
         "4": {
@@ -12500,6 +12509,7 @@
     },
     "timestamp": 1771206821796
 }
+
 
 
 
