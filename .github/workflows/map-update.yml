@@ -25,7 +25,7 @@ jobs:
           pip install pillow
 
       - name: Run script
-        run: ./dyna-downloader.py 
+        run: python dyna-downloader.py 
 
       - name: Commit and push image
         run: |
