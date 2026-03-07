@@ -3231,13 +3231,13 @@
                     "info": "Cragton"
                 },
                 "606": {
-                    "label": "Rosia",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Rosia<\/h1><div class=\"dial-bar\"><\/div><p  class=\"dial-dial\">\/dial rosia<\/p><p  class=\"dial-info\"><\/p><p  class=\"dial-wiki\"><a href=\"\"><\/a><\/p><p  class=\"dial-coord\">X : -19943 Y : 64 Z : 7529<br> ID : 606 Added by : Who?<\/p><\/div>",
-                    "x": "-19943",
+                    "label": "castlevilla",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">castlevilla<\/h1><div class=\"dial-bar\"><\/div><p  class=\"dial-dial\">\/dial castlevilla<\/p><p  class=\"dial-info\"><\/p><p  class=\"dial-wiki\"><a href=\"\"><\/a><\/p><p  class=\"dial-coord\">X : -19943 Y : 64 Z : 7529<br> ID : 606 Added by : Who?<\/p><\/div>",
+                    "x": "-19204",
                     "y": "64",
-                    "z": "7529",
+                    "z": "11312",
                     "icon": "building",
-                    "info": "Rosia"
+                    "info": "castlevilla"
                 },
                 "607": {
                     "label": "ShrimpinPimpin",
@@ -12482,3 +12482,4 @@
     },
     "timestamp": 1771206821796
 }
+
