@@ -1,8 +1,13 @@
 (function () {
     'use strict';
 
-    const DEFAULT_SET_ID = '1';
-    const ICON_OPTIONS = ['building', 'bed', 'default', 'farm', 'minecart', 'temple', 'tower', 'village'];
+    const TYPE_OPTIONS = ['build', 'shop', 'pvp', 'farm'];
+    const TYPE_TO_SET = {
+        build: { id: '1', label: 'Dial (Build)' },
+        farm: { id: '2', label: 'Farms' },
+        shop: { id: '3', label: 'Dial (Shop)' },
+        pvp: { id: '38', label: 'Dial (PVP Arena)' }
+    };
 
     let editorActive = false;
     let markerData = null;
@@ -11,18 +16,18 @@
     let listEl = null;
 
     function buildDesc(entry, id) {
-        const label = (entry.label || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        const dialName = (entry.dialName || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         const dial = (entry.dial || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         const info = (entry.info || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         const wiki = (entry.wiki || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         const x = String(entry.x ?? '');
         const y = String(entry.y ?? '');
         const z = String(entry.z ?? '');
-        return '<div class="dial-box"><h1 class="dial-name">' + label + '</h1><div class="dial-bar"></div><p  class="dial-dial">/dial ' + dial + '</p><p  class="dial-info">' + info + '</p><p  class="dial-wiki"><a href="' + wiki + '">' + wiki + '</a></p><p  class="dial-coord">X : ' + x + ' Y : ' + y + ' Z : ' + z + '<br> ID : ' + id + ' Added by : Who?</p></div>';
+        return '<div class="dial-box"><h1 class="dial-name">' + dialName + '</h1><div class="dial-bar"></div><p  class="dial-dial">/dial ' + dial + '</p><p  class="dial-info">' + info + '</p><p  class="dial-wiki"><a href="' + wiki + '">' + wiki + '</a></p><p  class="dial-coord">X : ' + x + ' Y : ' + y + ' Z : ' + z + '<br> ID : ' + id + ' Added by : Who?</p></div>';
     }
 
-    function getNextMarkerId(data) {
-        const set = data.sets && data.sets[DEFAULT_SET_ID];
+    function getNextMarkerId(data, setId) {
+        const set = data.sets && data.sets[setId];
         const markers = set && set.markers ? set.markers : {};
         let max = 0;
         Object.keys(markers).forEach(function (k) {
@@ -33,13 +38,20 @@
     }
 
     function entryToMarker(entry, id) {
+        const typeToIcon = {
+            build: 'building',
+            farm: 'farm',
+            shop: 'cart',
+            pvp: 'pvp'
+        };
+        const markerIcon = typeToIcon[entry.type] || 'building';
         return {
-            label: String(entry.label || ''),
+            label: String(entry.dialName || ''),
             desc: buildDesc(entry, id),
             x: String(entry.x ?? ''),
             y: String(entry.y ?? ''),
             z: String(entry.z ?? ''),
-            icon: entry.icon && ICON_OPTIONS.includes(entry.icon) ? entry.icon : 'building',
+            icon: markerIcon,
             info: String(entry.info || '')
         };
     }
@@ -53,7 +65,7 @@
             li.style.display = 'flex';
             li.style.alignItems = 'center';
             li.style.gap = '8px';
-            li.textContent = (entry.label || 'Unnamed') + ' @ ' + entry.x + ', ' + entry.z;
+            li.textContent = '[' + entry.type + '] ' + (entry.dialName || 'Unnamed') + ' @ ' + entry.x + ', ' + entry.z;
             const rm = document.createElement('button');
             rm.type = 'button';
             rm.textContent = 'Remove';
@@ -69,18 +81,18 @@
 
     function addEntry(form) {
         const entry = {
-            label: (form.label && form.label.value) ? form.label.value.trim() : '',
+            dialName: (form.dialName && form.dialName.value) ? form.dialName.value.trim() : '',
             info: (form.info && form.info.value) ? form.info.value.trim() : '',
             x: (form.x && form.x.value) ? form.x.value.trim() : '',
             y: (form.y && form.y.value) ? form.y.value.trim() : '64',
             z: (form.z && form.z.value) ? form.z.value.trim() : '',
-            icon: (form.icon && form.icon.value) ? form.icon.value : 'building',
+            type: (form.type && form.type.value) ? form.type.value : 'building',
             dial: (form.dial && form.dial.value) ? form.dial.value.trim() : '',
             wiki: (form.wiki && form.wiki.value) ? form.wiki.value.trim() : ''
         };
         newEntries.push(entry);
         renderNewEntriesList();
-        if (form.label) form.label.value = '';
+        if (form.dialName) form.dialName.value = '';
         if (form.info) form.info.value = '';
         if (form.x) form.x.value = '';
         if (form.y) form.y.value = '64';
@@ -92,16 +104,33 @@
     function buildExportData() {
         const data = JSON.parse(JSON.stringify(markerData));
         if (!data.sets) data.sets = {};
-        if (!data.sets[DEFAULT_SET_ID]) {
-            data.sets[DEFAULT_SET_ID] = { hide: false, circles: {}, areas: {}, label: 'Dial (Build)', lines: {}, layerprio: 1, markers: {} };
-        }
-        const markers = data.sets[DEFAULT_SET_ID].markers || {};
-        let nextId = getNextMarkerId(data);
-        newEntries.forEach(function (entry) {
-            markers[String(nextId)] = entryToMarker(entry, nextId);
-            nextId += 1;
+
+        const nextIds = {};
+        Object.keys(TYPE_TO_SET).forEach(function (type) {
+            const target = TYPE_TO_SET[type];
+            if (!data.sets[target.id]) {
+                data.sets[target.id] = {
+                    hide: false,
+                    circles: {},
+                    areas: {},
+                    label: target.label,
+                    lines: {},
+                    layerprio: 1,
+                    markers: {}
+                };
+            }
+            nextIds[target.id] = getNextMarkerId(data, target.id);
         });
-        data.sets[DEFAULT_SET_ID].markers = markers;
+
+        newEntries.forEach(function (entry) {
+            const target = TYPE_TO_SET[entry.type] || TYPE_TO_SET.building;
+            const markers = data.sets[target.id].markers || {};
+            const nextId = nextIds[target.id];
+            markers[String(nextId)] = entryToMarker(entry, nextId);
+            data.sets[target.id].markers = markers;
+            nextIds[target.id] += 1;
+        });
+
         return data;
     }
 
@@ -127,17 +156,17 @@
 
         panel.innerHTML =
             '<h2 style="margin-top:0;">Editor mode</h2>' +
-            '<p style="color:#aaa;font-size:14px;">Add new markers. They will be merged into set &quot;Dial (Build)&quot; when you download.</p>' +
+            '<p style="color:#aaa;font-size:14px;">Add new markers (Build/Farms/Shop/PVP).</p>' +
             '<form id="editor-form">' +
-            '<label>Label <input type="text" name="label" placeholder="Place name" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
+            '<label>Dial name <input type="text" name="dialName" placeholder="Dial Name" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Info <input type="text" name="info" placeholder="Short description / owners" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
-            '<label>X <input type="text" name="x" placeholder="-2773" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
-            '<label>Y <input type="text" name="y" placeholder="82" value="64" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
-            '<label>Z <input type="text" name="z" placeholder="2273" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
-            '<label>Dial command <input type="text" name="dial" placeholder="newcaprica" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
+            '<label>X <input type="text" name="x" placeholder="0" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
+            '<label>Y <input type="text" name="y" placeholder="64" value="64" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
+            '<label>Z <input type="text" name="z" placeholder="0" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
+            '<label>Dial command <input type="text" name="dial" value="/dial " placeholder="" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Wiki URL <input type="text" name="wiki" placeholder="https://..." style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
-            '<label>Icon <select name="icon" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;">' +
-            ICON_OPTIONS.map(function (o) { return '<option value="' + o + '">' + o + '</option>'; }).join('') +
+            '<label>Type <select name="type" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;">' +
+            TYPE_OPTIONS.map(function (o) { return '<option value="' + o + '">' + o + '</option>'; }).join('') +
             '</select></label>' +
             '<button type="button" id="editor-add-btn" style="margin-top:8px;padding:8px 16px;background:#4a7c59;color:#fff;border:none;border-radius:6px;cursor:pointer;">Add entry</button>' +
             '</form>' +
