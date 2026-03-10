@@ -6136,6 +6136,15 @@
                     "z": "-1547",
                     "icon": "building",
                     "info": "old castle grounds, found by doozie"
+                },
+                "1086": {
+                    "label": "milkvania",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">milkvania</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial /dial milkvania</p><p  class=\"dial-info\">Small town made by milkyman</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : 95 Y : 63 Z : -215<br> ID : 1085 Added by : Who?</p></div>",
+                    "x": "95",
+                    "y": "63",
+                    "z": "-215",
+                    "icon": "building",
+                    "info": "Small town made by milkyman"
                 }
             }
         },
