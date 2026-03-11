@@ -157,13 +157,19 @@
         panel.innerHTML =
             '<h2 style="margin-top:0;">Editor mode</h2>' +
             '<p style="color:#aaa;font-size:14px;">Add new markers (Build/Farms/Shop/PVP).</p>' +
+            '<div style="margin:8px 0 12px 0;font-size:13px;">' +
+            '<label>Use local marker_world.json ' +
+            '<input type="file" id="editor-file-input" accept=".json,application/json" style="margin-left:4px;font-size:12px;">' +
+            '</label>' +
+            '<span id="editor-file-status" style="margin-left:8px;color:#aaa;"></span>' +
+            '</div>' +
             '<form id="editor-form">' +
             '<label>Dial name <input type="text" name="dialName" placeholder="Dial Name" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Info <input type="text" name="info" placeholder="Short description / owners" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>X <input type="text" name="x" placeholder="0" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Y <input type="text" name="y" placeholder="64" value="64" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Z <input type="text" name="z" placeholder="0" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
-            '<label>Dial command <input type="text" name="dial" value="" placeholder="" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
+            '<label>Dial command (don\'t include /dial) <input type="text" name="dial" value="" placeholder="" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Wiki URL <input type="text" name="wiki" placeholder="https://..." style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Type <select name="type" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;">' +
             TYPE_OPTIONS.map(function (o) { return '<option value="' + o + '">' + o + '</option>'; }).join('') +
@@ -194,6 +200,31 @@
         wrap.addEventListener('click', function (e) {
             if (e.target === wrap) closeEditor();
         });
+
+        const fileInput = document.getElementById('editor-file-input');
+        const fileStatus = document.getElementById('editor-file-status');
+        if (fileInput) {
+            fileInput.addEventListener('change', function (e) {
+                const file = e.target.files && e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = function (ev) {
+                    try {
+                        const json = JSON.parse(ev.target.result);
+                        markerData = json;
+                        newEntries = [];
+                        renderNewEntriesList();
+                        if (fileStatus) {
+                            fileStatus.textContent = 'Loaded ' + (file.name || 'file');
+                        }
+                    } catch (err) {
+                        console.error(err);
+                        alert('Could not parse JSON from selected file.');
+                    }
+                };
+                reader.readAsText(file);
+            });
+        }
 
         function updateCount() {
             var el = document.getElementById('editor-count');
