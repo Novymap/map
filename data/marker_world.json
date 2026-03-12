@@ -6145,6 +6145,15 @@
                     "z": "-215",
                     "icon": "building",
                     "info": "Small town made by milkyman"
+                },
+                "1087": {
+                    "label": "Novy Moment",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Novy Moment</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial novy_moment</p><p  class=\"dial-info\">A dial built high up in the sky, with no safe way down</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -11264 Y : 140 Z : -11758<br> ID : 1087 Added by : Who?</p></div>",
+                    "x": "-11264",
+                    "y": "140",
+                    "z": "-11758",
+                    "icon": "building",
+                    "info": "A dial built high up in the sky, with no safe way down"
                 }
             }
         },
