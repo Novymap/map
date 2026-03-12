@@ -206,7 +206,8 @@
                         iconAnchor: [10, 30],
                         popupAnchor: [0, -30]
                     }),
-                    name: poi.name
+                    name: poi.name,
+                    searchText: [poi.name, poi.dial].filter(Boolean).join(' ◈ ')
                 }).addTo(groups[poi.category]);
                 marker.bindPopup(`<h3>${poi.name}</h3><mid>/dial <b>${poi.dial}</b></mid><br><sml>${poi.x}, ${poi.z}</sml><br><mid>${poi.info}<mid>`).openPopup();
                 markers.push(marker);
@@ -246,7 +247,7 @@
             L.control.search({
                 layer: markerGroup,
                 initial: false,
-                propertyName: 'name',
+                propertyName: 'searchText',
                 moveToLocation: function (latlng, title, mapInstance) {
                     mapInstance.flyTo(latlng, 10);
                 }

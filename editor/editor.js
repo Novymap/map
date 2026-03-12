@@ -52,7 +52,8 @@
             y: String(entry.y ?? ''),
             z: String(entry.z ?? ''),
             icon: markerIcon,
-            info: String(entry.info || '')
+            info: String(entry.info || ''),
+            dial: String(entry.dial || '')
         };
     }
 
