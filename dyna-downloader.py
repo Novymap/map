@@ -99,7 +99,8 @@ def stitch_images(min_x: int, max_x: int, min_y: int, max_y: int, step: int, out
                 continue
 
             col_x = x_index * TILE_SIZE
-            final_image.paste(tile_img, (col_x, row_y))
+            #hacky solution but the final image is 8 pixels lower than it should be an i dont know why sooooooooooo
+            final_image.paste(tile_img, (col_x, row_y - 8))
 
         print(f"Stitched row y={y}")
 
