@@ -6850,6 +6850,36 @@
                     "icon": "building",
                     "info": "",
                     "dial": "TFS"
+                },
+                "1090": {
+                    "label": "martan_base2",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">martan_base2</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial martan_base2</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -7912 Y : 64 Z : 12350<br> ID : 1090 Added by : Who?</p></div>",
+                    "x": "-7912",
+                    "y": "64",
+                    "z": "12350",
+                    "icon": "building",
+                    "info": "",
+                    "dial": "martan_base2"
+                },
+                "1091": {
+                    "label": "refuge",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">refuge</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial refuge</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -5342 Y : 64 Z : 14142<br> ID : 1091 Added by : Who?</p></div>",
+                    "x": "-5342",
+                    "y": "64",
+                    "z": "14142",
+                    "icon": "building",
+                    "info": "",
+                    "dial": "refuge"
+                },
+                "1092": {
+                    "label": "Sakura",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Sakura</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial Sakura</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -6783 Y : 64 Z : 14913<br> ID : 1092 Added by : Who?</p></div>",
+                    "x": "-6783",
+                    "y": "64",
+                    "z": "14913",
+                    "icon": "building",
+                    "info": "",
+                    "dial": "Sakura"
                 }
             }
         },
