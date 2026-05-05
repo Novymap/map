@@ -5620,33 +5620,13 @@
                 },
                 "940": {
                     "label": "ksi",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">ksi</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial 䥰龘䰕䘋㽌䇁䵄䵻䬛蟿⣼˼˿‰‡▜▿⮊:star::o:䆉㖀䨻䨺䆐毳舙噜ቍ፱ቧጧⷃⶪᆔ끃몭̻́͟ڒݐݤﻪﻯիր⢓⣋嚖嚗嚘啮嚚嚛嚜嚝嚞篍篎篏篐篑篒篓篔ęԅ簸簹簺簻籀籁腫腬腭腮腯腰腱腲腳腴腵腶腷腸腹腺腻腼腽腾膀膁膂膃膄膅膆膇膈膉膊膋膌膍膎膏膐膑膒膓膔膕膖膗膘膙膚膜膞ߺ籃籄籅籆籇籈𝞕゛㇍㈾⸾㈾𝌌𝞕啮囔囕囖曀曁曂曃晔፱ቧጧⷃⶪᆔ끃曅曈፡፠ᎇ፡፳ᎉ曊曋曌曍曎曏曐曑曒曓曔꒖꒗꒼꒼曛曜曝曞曟旷曡曢曣𛰸ή῀ῧῒ῾ῪΩῗ芶芻芼芽芾芿苁ܧؿݑ۞苀芿苂苃苄苅苆苇苈苉苊苍苎苏苐苑𐍃𐍄腭腮</p><p  class=\"dial-info\">QVH&#039;s island the name is from the mistranslation of oddly shaped island in cantonese</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -16413 Y : 63 Z : -17259<br> ID : 940 Added by : </p></div>",
-                    "x": "-16413",
-                    "y": "63",
-                    "z": "-17259",
-                    "icon": "building",
-                    "info": "ksi",
-                    "dial": "䥰龘䰕䘋㽌䇁䵄䵻䬛蟿⣼˼˿‰‡▜▿⮊:star::o:䆉㖀䨻䨺䆐毳舙噜ቍ፱ቧጧⷃⶪᆔ끃몭̻́͟ڒݐݤﻪﻯիր⢓⣋嚖嚗嚘啮嚚嚛嚜嚝嚞篍篎篏篐篑篒篓篔ęԅ簸簹簺簻籀籁腫腬腭腮腯腰腱腲腳腴腵腶腷腸腹腺腻腼腽腾膀膁膂膃膄膅膆膇膈膉膊膋膌膍膎膏膐膑膒膓膔膕膖膗膘膙膚膜膞ߺ籃籄籅籆籇籈𝞕゛㇍㈾⸾㈾𝌌𝞕啮囔囕囖曀曁曂曃晔፱ቧጧⷃⶪᆔ끃曅曈፡፠ᎇ፡፳ᎉ曊曋曌曍曎曏曐曑曒曓曔꒖꒗꒼꒼曛曜曝曞曟旷曡曢曣𛰸ή῀ῧῒ῾ῪΩῗ芶芻芼芽芾芿苁ܧؿݑ۞苀芿苂苃苄苅苆苇苈苉苊苍苎苏苐苑𐍃𐍄腭腮"
-                },
-                "941": {
-                    "label": "ksi",
                     "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">ksi</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial 䥰龘䰕䘋㽌䇁䵄䵻䬛蟿䆉㖀䨻㵘䲜䨺䆐毳舙麤雦霛嚒嚓嚔噜嚖嚗嚘啮嚚嚛嚜嚝嚞嚟嚠嚡嚢嚣嚤呖嚧咙嚩咙嚧嚪嚫嚬嚭嚯嚰嚱亸喾嚵嘤嚷嚸嚹嚺嚻嚼嚽嚾嚿啭嗫嚣囃囄冁囆囇呓囊囋囍囎囏囐嘱囒啮囔囕囖曀曁曂曃晔曅曈曊曋曌曍曎曏曐曑曒曓曔曕曗曘曙曚曛曜曝曞曟旷曡曢曣曤曥曦曧昽曩曪曫晒曭曮曯</p><p  class=\"dial-info\">QVH&#039;s island the name is from the mistranslation of oddly shaped island in cantonese</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -16417 Y : 63 Z : -17259<br> ID : 941 Added by : </p></div>",
                     "x": "-16417",
                     "y": "63",
                     "z": "-17259",
                     "icon": "building",
                     "info": "ksi",
-                    "dial": "䥰龘䰕䘋㽌䇁䵄䵻䬛蟿䆉㖀䨻㵘䲜䨺䆐毳舙麤雦霛嚒嚓嚔噜嚖嚗嚘啮嚚嚛嚜嚝嚞嚟嚠嚡嚢嚣嚤呖嚧咙嚩咙嚧嚪嚫嚬嚭嚯嚰嚱亸喾嚵嘤嚷嚸嚹嚺嚻嚼嚽嚾嚿啭嗫嚣囃囄冁囆囇呓囊囋囍囎囏囐嘱囒啮囔囕囖曀曁曂曃晔曅曈曊曋曌曍曎曏曐曑曒曓曔曕曗曘曙曚曛曜曝曞曟旷曡曢曣曤曥曦曧昽曩曪曫晒曭曮曯"
-                },
-                "942": {
-                    "label": "Longest dial name",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Longest dial name</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial 你好，你今天過得怎麼樣，我做這個是因為你知道誰告訴我我應該很高興讓我們看看這個是否可以比另一個中國錶盤更長我打賭我們可以，因為這是完全隨機的，而另一種方式實際上是什麼。請鑽石鎮和克蘇魯之地的你們喜歡這個名字，我們愛你們！由於這還不夠長，我將通過添加一些額外的單詞來使其更長，使其超過五百四十個單詞，因為這必須比歷史上任何可能的撥號都長。等等，我想現在時間更長了，所以我想稍後再見你。顯然它已經不長了，所以我們讓它超過七百個字符，甚至八百個字符，這樣我就可以使它成為伺服器上最長的撥號。</p><p  class=\"dial-info\">Created by Dakto_</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -16041 Y : 92 Z : -12738<br> ID : 942 Added by : </p></div>",
-                    "x": "-16041",
-                    "y": "92",
-                    "z": "-12738",
-                    "icon": "building",
-                    "info": "Longest dial name",
-                    "dial": "你好，你今天過得怎麼樣，我做這個是因為你知道誰告訴我我應該很高興讓我們看看這個是否可以比另一個中國錶盤更長我打賭我們可以，因為這是完全隨機的，而另一種方式實際上是什麼。請鑽石鎮和克蘇魯之地的你們喜歡這個名字，我們愛你們！由於這還不夠長，我將通過添加一些額外的單詞來使其更長，使其超過五百四十個單詞，因為這必須比歷史上任何可能的撥號都長。等等，我想現在時間更長了，所以我想稍後再見你。顯然它已經不長了，所以我們讓它超過七百個字符，甚至八百個字符，這樣我就可以使它成為伺服器上最長的撥號。"
+                    "dial": "ksi"
                 },
                 "945": {
                     "label": "getold",
@@ -5660,13 +5640,13 @@
                 },
                 "948": {
                     "label": "Fort Perseverance",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Fort Perseverance</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial N/A</p><p  class=\"dial-info\">Miv2nir base</p><p  class=\"dial-wiki\"><a href=\"https://wiki.interserveral.org/index.php/Fort_Perseverance\">https://wiki.interserveral.org/index.php/Fort_Perseverance</a></p><p  class=\"dial-coord\">X : -15743 Y : 64 Z : -1054<br> ID : 948 Added by : </p></div>",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Fort Perseverance</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial mivsplace</p><p  class=\"dial-info\">Miv2nir base</p><p  class=\"dial-wiki\"><a href=\"https://wiki.interserveral.org/index.php/Fort_Perseverance\">https://wiki.interserveral.org/index.php/Fort_Perseverance</a></p><p  class=\"dial-coord\">X : -15743 Y : 64 Z : -1054<br> ID : 948 Added by : </p></div>",
                     "x": "-15743",
                     "y": "64",
                     "z": "-1054",
                     "icon": "building",
                     "info": "Fort Perseverance",
-                    "dial": "N/A"
+                    "dial": "mivsplace"
                 },
                 "949": {
                     "label": "kuskebabi base",
@@ -6178,16 +6158,6 @@
                     "info": "",
                     "dial": "u"
                 },
-                "1022": {
-                    "label": "krmesa",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">krmesa</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial krmesa</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -10552 Y : 64 Z : 11348<br> ID : 1022 Added by : Who?</p></div>",
-                    "x": "-10552",
-                    "y": "64",
-                    "z": "11348",
-                    "icon": "building",
-                    "info": "",
-                    "dial": "krmesa"
-                },
                 "1023": {
                     "label": "/",
                     "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">/</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial /</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -10536 Y : 64 Z : 11461<br> ID : 1023 Added by : Who?</p></div>",
@@ -6289,7 +6259,7 @@
                 },
                 "1033": {
                     "label": "AquaticaReloaded",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">AquaticaReloaded</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial </p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -8520 Y : 64 Z : 9423<br> ID : 1033 Added by : Who?</p></div>",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">AquaticaReloaded</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial AquaticaReloaded</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -8520 Y : 64 Z : 9423<br> ID : 1033 Added by : Who?</p></div>",
                     "x": "-8520",
                     "y": "64",
                     "z": "9423",
@@ -6308,7 +6278,7 @@
                 },
                 "1035": {
                     "label": "SkyBase",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">SkyBase</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial </p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -9292 Y : 64 Z : 8674<br> ID : 1035 Added by : Who?</p></div>",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">SkyBase</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial SkyBase</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -9292 Y : 64 Z : 8674<br> ID : 1035 Added by : Who?</p></div>",
                     "x": "-9292",
                     "y": "64",
                     "z": "8674",
