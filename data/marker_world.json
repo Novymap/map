@@ -4739,14 +4739,14 @@
                     "dial": "arco"
                 },
                 "760": {
-                    "label": "Sky City",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Sky City</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial skycity</p><p  class=\"dial-info\">Owned by HotGoldenTNT</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -9271 Y : 64 Z : -8220<br> ID : 760 Added by : Who?</p></div>",
+                    "label": "Sky Town",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Sky City</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial skytown</p><p  class=\"dial-info\">Owned by HotGoldenTNT</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -9271 Y : 64 Z : -8220<br> ID : 760 Added by : Who?</p></div>",
                     "x": "-9271",
                     "y": "64",
                     "z": "-8220",
                     "icon": "building",
                     "info": "Sky City",
-                    "dial": "skycity"
+                    "dial": "skytown"
                 },
                 "763": {
                     "label": "Old Bescart",
@@ -7160,6 +7160,16 @@
                     "icon": "building",
                     "info": "",
                     "dial": "north"
+                },
+                "1125": {
+                    "label": "winjsbase",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">north</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial winjsbase</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : 15473 Y : 64 Z : -19995<br> ID : 1124 Added by : Who?</p></div>",
+                    "x": "-7103",
+                    "y": "64",
+                    "z": "-15024",
+                    "icon": "building",
+                    "info": "",
+                    "dial": "winjsbase"
                 }
             }
         },
