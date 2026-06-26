@@ -134,16 +134,130 @@
             return { pois, trenLines };
         }
 
+        var HEATMAP_TILES = 4;
+        var HEATMAP_ZOOM = 2;
+        var HEATMAP_MIN_TILE_ZOOM = 8;
+        var HEATMAP_BOUNDS_SCALE = .99;
+        var MAP_HALF = 20.48;
+        var MAP_SPAN = MAP_HALF * 2;
+
+        function heatmapBoundsHalf(bounds) {
+            // bounds are symmetric square like [[-h,-h],[h,h]]
+            return Math.abs(bounds[1][0]);
+        }
+
+        function heatmapTileSize(bounds) {
+            var half = heatmapBoundsHalf(bounds);
+            var span = half * 2;
+            return L.point(
+                span * Math.pow(2, HEATMAP_ZOOM) / HEATMAP_TILES,
+                span * Math.pow(2, HEATMAP_ZOOM) / HEATMAP_TILES
+            );
+        }
+
+        function heatmapTileOrigin(bounds) {
+            var half = heatmapBoundsHalf(bounds);
+            var tileSize = heatmapTileSize(bounds);
+            var s = L.CRS.Simple.scale(HEATMAP_ZOOM);
+            return {
+                minX: Math.floor(-half * s / tileSize.x),
+                minY: Math.floor(-half * s / tileSize.y)
+            };
+        }
+
+        function createHeatmapTileLayer(bounds) {
+            var origin = heatmapTileOrigin(bounds);
+            var tileSize = heatmapTileSize(bounds);
+            var layer = L.tileLayer('', {
+                tileSize: tileSize,
+                minNativeZoom: HEATMAP_ZOOM,
+                maxNativeZoom: HEATMAP_ZOOM,
+                maxZoom: 14,
+                bounds: bounds,
+                noWrap: true
+            });
+            layer.getTileUrl = function (coords) {
+                if (coords.z !== HEATMAP_ZOOM) return '';
+                var localX = coords.x - origin.minX;
+                var localY = coords.y - origin.minY;
+                if (localX < 0 || localX >= HEATMAP_TILES ||
+                    localY < 0 || localY >= HEATMAP_TILES) return '';
+                var index = localY * HEATMAP_TILES + localX;
+                return 'heatmap/output_' + index + '.png';
+            };
+            return layer;
+        }
+
+        function createHeatmapLayer(bounds, map) {
+            var overview = null;
+            var tiles = null;
+
+            function update() {
+                if (!overview) {
+                    overview = L.imageOverlay('./map-heat.png', bounds, { opacity: 1 });
+                    overview.addTo(map);
+                }
+
+                if (map.getZoom() > HEATMAP_MIN_TILE_ZOOM) {
+                    overview.setOpacity(0);
+                    if (!tiles) {
+                        tiles = createHeatmapTileLayer(bounds);
+                        tiles.addTo(map);
+                    }
+                } else {
+                    overview.setOpacity(1);
+                    if (tiles) {
+                        map.removeLayer(tiles);
+                        tiles = null;
+                    }
+                }                
+            }
+
+            return {
+                addTo: function (mapInstance) {
+                    map = mapInstance;
+                    map.on('zoom', update);
+                    map.on('zoomend', update);
+                    update();
+                    return this;
+                },
+                _heatmapCleanup: function () {
+                    map.off('zoom', update);
+                    map.off('zoomend', update);
+                    if (tiles) {
+                        map.removeLayer(tiles);
+                        tiles = null;
+                    }
+                    if (overview) {
+                        map.removeLayer(overview);
+                        overview = null;
+                    }
+                }
+            };
+        }
+
         function initMap(pois, trenLines) {
             var map = L.map('map', {
                 crs: L.CRS.Simple,
-                minZoom: 5,
-                maxZoom: 12,
+                minZoom: 0,
+                maxZoom: 14,
                 zoomSnap: 0.25
-            }).setView([0, 0], 0);
+            });
             var bounds = [[-20.48, -20.48], [20.48, 20.48]];
             var currentOverlay = L.imageOverlay('map-dyna.jpg', bounds).addTo(map);
             map.fitBounds(bounds);
+            var heatBoundsHalf = 20.48 * HEATMAP_BOUNDS_SCALE;
+            var heatBounds = [[-heatBoundsHalf, -heatBoundsHalf], [heatBoundsHalf, heatBoundsHalf]];
+
+            function removeMapOverlay(mapInstance) {
+                if (!currentOverlay) return;
+                if (currentOverlay._heatmapCleanup) {
+                    currentOverlay._heatmapCleanup();
+                } else {
+                    mapInstance.removeLayer(currentOverlay);
+                }
+                currentOverlay = null;
+            }
 
             var MapSelectorControl = L.Control.extend({
                 options: {
@@ -168,14 +282,20 @@
                     optionDyna.selected = true;
                     optionDyna.innerHTML = 'Dynamap';
 
+                    var optionHeat = L.DomUtil.create('option', '', select);
+                    optionHeat.value = 'heatmap';
+                    optionHeat.innerHTML = 'Heatmap';
+
                     L.DomEvent.disableClickPropagation(container);
 
                     select.addEventListener('change', function (e) {
-                        if (currentOverlay) {
-                            mapInstance.removeLayer(currentOverlay);
-                        }
+                        removeMapOverlay(mapInstance);
                         var selected = e.target.value;
-                        currentOverlay = L.imageOverlay(selected, bounds).addTo(mapInstance);
+                        if (selected === 'heatmap') {
+                            currentOverlay = createHeatmapLayer(heatBounds, mapInstance).addTo(mapInstance);
+                        } else {
+                            currentOverlay = L.imageOverlay(selected, bounds).addTo(mapInstance);
+                        }
                     });
 
                     return container;
