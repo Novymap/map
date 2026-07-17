@@ -360,7 +360,6 @@
                 if (!groups[poi.category]) {
                         groups[poi.category] = L.layerGroup().addTo(map);
                     }
-                }
                 var marker = L.marker(worldToMap(poi.x, poi.z), {
                     icon: L.icon({
                         iconUrl: "marker/" + poi.color + '-marker.png',
