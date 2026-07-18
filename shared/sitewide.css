@@ -1,0 +1,390 @@
+/* Modernized CSS with easy dark/light toggling via CSS variables */
+
+/* Default (dark) theme variables */
+:root {
+  --background: #121212;
+  --surface-bg: #1e1e1e;
+  --accent: #e63946;
+  --primary: #ffb703;
+  --secondary: #8ecae6;
+  --link: #ffd166;
+  --link-hover: #ffb703;
+  --text: #f0f0f0;
+  --muted-text: #a0a0a0;
+  --card-bg: #1f1f1f;
+  --card-shadow: rgba(0, 0, 0, 0.6);
+  --transition: 0.3s ease;
+}
+
+/* Light theme overrides (add data-theme="light" on <html> or <body>) */
+[data-theme="light"] {
+  --background: #f5f5f5;
+  --surface-bg: #ffffff;
+  --accent: #d00000;
+  --primary: #0077b6;
+  --secondary: #0096c7;
+  --link: #0077b6;
+  --link-hover: #005f87;
+  --text: #121212;
+  --muted-text: #555555;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Global styles */
+body {
+  background-color: var(--background);
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1.6;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+/* Link styling */
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:focus {
+  outline: 2px dashed var(--secondary);
+  outline-offset: 2px;
+}
+
+/* Layout containers */
+.container {
+  display: grid;
+  margin: 2vh;
+  gap: 1rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+}
+
+/* Cards and items */
+.item {
+  margin: 10px;
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 0.6em 1em;
+  font-size: 1.8em;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+  text-decoration: none;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--card-shadow);
+  filter: brightness(1.1);
+}
+
+/* Settings containers */
+.settings-container-top,
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--surface-bg);
+  width: 100vh;
+  max-width: 88vw;
+  box-shadow: 0 8px 32px var(--card-shadow);
+  border-radius: 2rem;
+  padding: 2rem;
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+  animation: fadeIn 0.6s ease both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Forms and inputs */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 1.75rem;
+}
+
+.input,
+.ta {
+  width: 80%;
+  max-width: 600px;
+  padding: 0.75em;
+  font-size: 1.25rem;
+  border-radius: 0.75rem;
+  text-align: left;
+  border: 2px solid var(--muted-text);
+  background-color: var(--card-bg);
+  transition: border-color var(--transition), box-shadow var(--transition), background-color var(--transition);
+  margin-top: 0.75rem;
+  color: var(--text);
+}
+
+/* Hover effect for .input (use on buttons or inputs) */
+.input:hover {
+  background-color: var(--surface-bg);
+  border-color: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+  cursor: pointer;
+}
+
+.input:focus,
+.ta:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+}
+
+.button {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+.button:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+#submit-btn {
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 0.75em 1.5em;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+#submit-btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--primary);
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 5% auto 7.5 auto;
+  font-size: 1rem;
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 16px var(--card-shadow);
+  border-radius: 1rem;
+  overflow: hidden;
+  animation: fadeInTable 0.8s ease both;
+}
+
+@keyframes fadeInTable {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+th,
+td {
+  padding: 0.75em;
+  text-align: left;
+  border-bottom: 1px solid var(--muted-text);
+}
+
+th {
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--surface-bg);
+}
+
+tr:hover {
+  background-color: var(--link-hover);
+}
+
+/* Suggestion cards */
+.suggestions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 90%;
+  margin: 2em auto;
+}
+
+.suggestion-card {
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1.5em;
+  box-shadow: 0 6px 16px var(--card-shadow);
+  color: var(--text);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.suggestion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px var(--card-shadow);
+}
+
+.card-header .name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.card-header .created-at {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+
+.card-details,
+.card-description,
+.card-reason,
+.card-status {
+  margin: 0.75em 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.card-actions button {
+  padding: 0.5em 1em;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.card-actions .push { background-color: var(--secondary); color: var(--background); }
+.card-actions .edit { background-color: #06d6a0; color: var(--background); }
+.card-actions .deny { background-color: var(--accent); color: var(--text); }
+
+.card-actions button:hover {
+  transform: translateY(-2px);
+}
+
+/* Feature grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+}
+
+.feature-card {
+  background-color: var(--surface-bg);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 18px var(--card-shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.feature-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card a {
+  color: var(--link);
+  position: relative;
+}
+
+.feature-card a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: var(--link-hover);
+  transition: width var(--transition), left var(--transition);
+}
+
+.feature-card a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px var(--card-shadow);
+}
+
+.feature-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.feature-card.disabled::before {
+  font-size: 1.25rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--surface-bg);
+  color: var(--muted-text);
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid var(--muted-text);
+  font-size: 0.9rem;
+}
+
+.footer p a {
+  color: var(--link);
+  transition: color var(--transition);
+}
+
+.footer p a:hover {
+  color: var(--link-hover);
+}
+
+/* Responsive tweaks */
+@media (min-width: 600px) {
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .container { grid-template-columns: repeat(3, 1fr); margin: 0 5vw; }
+  .item { width: auto; }
+}
+
+/* Reduced-motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

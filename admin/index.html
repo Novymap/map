@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel : Home Page</title>
+    <link rel="stylesheet" href="../shared/nav.css">
+    <link rel="stylesheet" href="../shared/sitewide.css">
+    <link rel="icon" type="image/png" href="../shared/novymap-qvh.png">
+</head>
+<body>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                novymap
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/map/">Map</a>
+            <a href="https://discord.gg/NSdnxsjA8y">Discord</a>
+            <a href="javascript:void(0);" onclick="toggleTheme()">Toggle Theme</a>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="settings-container-top">
+            <h1 class="qvhtile">Admin Panel</h1>
+            <div class="feature-grid">
+                <a href="poi/" class="feature-card">
+                    <h3>POI Admin Panel</h3>
+                    <p>Add, edit, and delete points of interest in marker_world.json.</p>
+                </a>
+                <a href="lines/" class="feature-card">
+                    <h3>Rail Line Admin Panel</h3>
+                    <p>Add, edit, and delete railway lines in railway.json.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../shared/theme.js"></script>
+</body>
+</html>

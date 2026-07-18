@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel : POI Admin Panel</title>
+    <link rel="stylesheet" href="../../shared/nav.css">
+    <link rel="stylesheet" href="../../shared/sitewide.css">
+    <link rel="icon" type="image/png" href="../../shared/novymap-qvh.png">
+    <style>
+        .admin-wrap { width: 100%; max-width: 1000px; margin: 0 auto; padding: 1rem 1rem 3rem; }
+        .admin-toolbar { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+        .admin-toolbar input[type="text"] { flex: 1; min-width: 200px; padding: 8px; border-radius: 6px; border: 1px solid var(--muted-text); background: var(--card-bg); color: var(--text); }
+        table.poi-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        table.poi-table th, table.poi-table td { border-bottom: 1px solid var(--card-shadow); padding: 6px 8px; text-align: left; }
+        table.poi-table tr:hover { background: rgba(128,128,128,0.08); }
+        .btn { padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; color: #fff; font-size: 13px; }
+        .btn-edit { background: #3d6ba8; }
+        .btn-delete { background: #a83d3d; }
+        .btn-add { background: #4a7c59; }
+        .btn-save { background: #4a7c59; }
+        .btn-cancel { background: #666; }
+        .poi-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; margin: 12px 0; background: var(--card-bg); padding: 12px; border-radius: 8px; }
+        .poi-form label { display: flex; flex-direction: column; font-size: 12px; color: var(--muted-text); }
+        .poi-form input, .poi-form select { margin-top: 4px; padding: 6px; border-radius: 4px; border: 1px solid var(--muted-text); background: var(--background); color: var(--text); }
+        .poi-form-actions { grid-column: 1 / -1; display: flex; gap: 8px; }
+        #status-msg { margin: 8px 0; color: var(--muted-text); font-size: 13px; }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header"><div class="nav-title">novymap</div></div>
+        <div class="nav-btn"><label for="nav-check"><span></span><span></span><span></span></label></div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/map/">Map</a>
+            <a href="../">Admin</a>
+            <a href="javascript:void(0);" onclick="toggleTheme()">Toggle Theme</a>
+        </div>
+    </div>
+
+    <div class="admin-wrap">
+        <h1 class="qvhtile">POI Admin Panel</h1>
+        <p id="status-msg">Loading data/marker_world.json…</p>
+
+        <div class="admin-toolbar">
+            <input type="text" id="search-box" placeholder="Search by name, dial, or type…">
+            <button class="btn btn-add" id="add-new-btn">+ Add new POI</button>
+            <button class="btn btn-save" id="download-btn">Download marker_world.json</button>
+        </div>
+
+        <div id="form-container"></div>
+
+        <table class="poi-table">
+            <thead>
+                <tr><th>Type</th><th>Label</th><th>Dial</th><th>X</th><th>Y</th><th>Z</th><th>Icon</th><th></th></tr>
+            </thead>
+            <tbody id="poi-rows"></tbody>
+        </table>
+    </div>
+
+    <script src="../shared/theme.js"></script>
+    <script src="poi.js"></script>
+</body>
+</html>

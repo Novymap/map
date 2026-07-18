@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a map of the entirety of novylen">
+    <title>Novymap</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search@2.9.7/dist/leaflet-search.min.css" />
+    <link rel="stylesheet" href="map.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Novymap">
+    <meta name="twitter:description" content="A map of the entirety of novylen with a few extras">
+    <meta name="twitter:image" content="https://novymap.github.io/map/banner.png">
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
+    <script>
+        const WORLD_SCALE = 1000;
+        //not a good fix
+        //const MAP_SOUTH_OFFSET = 0.03;
+
+        function worldToMap(x, z) {
+            //return [-(z / WORLD_SCALE) - MAP_SOUTH_OFFSET, (x / WORLD_SCALE)];
+            return [-(z / WORLD_SCALE), (x / WORLD_SCALE)];
+        }
+
+        function mapToWorld(lat, lng) {
+            return {
+                x: lng * WORLD_SCALE,
+                //z: -(lat + MAP_SOUTH_OFFSET) * WORLD_SCALE
+                z: -(lat) * WORLD_SCALE
+            };
+        }        
+        async function loadData() {
+            const [markerRes, railwayRes] = await Promise.all([
+                fetch('../data/marker_world.json'),
+                fetch('../data/railway.json')
+            ]);
+
+            if (!markerRes.ok) {
+                throw new Error('Failed to load marker_world.json');
+            }
+            if (!railwayRes.ok) {
+                throw new Error('Failed to load railway.json');
+            }
+
+            const markerData = await markerRes.json();
+            const railwayData = await railwayRes.json();
+
+            //marker_world.json points on map
+            const pois = [];
+            if (markerData && markerData.markers) {
+                const typeToLabel = {
+                    build: 'Dial (Build)',
+                    farm: 'Dial (Farm)',
+                    shop: 'Dial (Shop)',
+                    other: 'Dial (Other)',
+                    station: 'Dial (Station)',
+                    wxt: 'Dial (WXT)',
+                    dial: 'Dial (Dial)',
+                    pvp: 'Dial (PVP Arena)'
+                };
+                const typeToColor = {
+                    build: 'red',
+                    farm: 'yellow',
+                    shop: 'green',
+                    other: 'red',
+                    station: 'blue',
+                    wxt: 'purple',
+                    dial: 'red',
+                    pvp: 'red'
+                };
+
+                Object.entries(markerData.markers).forEach(([id, m]) => {
+                    const x = Number(m.x);
+                    const z = Number(m.z);
+                    if (Number.isNaN(x) || Number.isNaN(z)) return;
+
+                    const type = m.type || 'other';
+                    const category = typeToLabel[type] || type;
+                    const color = typeToColor[type] || 'red';
+
+                    pois.push({
+                        id: id,
+                        name: m.label || m.info || 'Unknown',
+                        dial: m.dial || '',
+                        info: m.info || '',
+                        wiki: m.wiki || '',
+                        img: !!m.img,
+                        addedBy: m.addedBy || '',
+                        x: x,
+                        y: m.y || '',
+                        z: z,
+                        color: color,
+                        category: category,
+                        type: type
+                    });
+                });
+            }
+
+            //railways
+            const trenLines = [];
+            if (railwayData && railwayData.sets) {
+                Object.values(railwayData.sets).forEach(set => {
+                    const lines = set.lines || {};
+                    Object.values(lines).forEach(line => {
+                        if (!Array.isArray(line.points)) return;
+                        const points = line.points.map(p => {
+                            const x = Number(p[0]);
+                            const z = Number(p[1]);
+                            if (Number.isNaN(x) || Number.isNaN(z)) return null;
+                            return worldToMap(x, z);
+                        }).filter(Boolean);
+
+                        if (!points.length) return;
+                        trenLines.push({
+                            name: line.label || '',
+                            color: line.color || '#ffffff',
+                            points: points
+                        });
+                    });
+                });
+            }
+
+            return { pois, trenLines };
+        }
+
+        var HEATMAP_TILES = 4;
+        var HEATMAP_ZOOM = 2;
+        var HEATMAP_MIN_TILE_ZOOM = 8;
+        var HEATMAP_BOUNDS_SCALE = .99;
+        var HEATMAP_LEGEND = [
+            { min: 12, color: 'rgb(64, 0, 96)' },
+            { min: 10, color: 'rgb(147, 51, 234)' },
+            { min: 8, color: 'rgb(220, 30, 30)' },
+            { min: 6, color: 'rgb(255, 140, 0)' },
+            { min: 4, color: 'rgb(255, 235, 0)' },
+            { min: 2, color: 'rgb(40, 200, 80)' },
+            { min: 1, color: 'rgb(0, 180, 180)' }
+        ];
+
+        function heatmapLegendLabel(index) {
+            var entry = HEATMAP_LEGEND[index];
+            if (index === 0) return entry.min + '+';
+            var nextMin = HEATMAP_LEGEND[index - 1].min;
+            if (entry.min === nextMin - 1) return String(entry.min);
+            return entry.min + '–' + (nextMin - 1);
+        }
+
+        function createHeatmapLegendEl() {
+            var legend = L.DomUtil.create('div', 'heatmap-legend hidden');
+            var title = L.DomUtil.create('div', 'heatmap-legend-title', legend);
+            title.innerHTML = 'Block Changes<br>2024-2025';
+            var items = L.DomUtil.create('div', 'heatmap-legend-items', legend);
+            HEATMAP_LEGEND.forEach(function (entry, index) {
+                var item = L.DomUtil.create('div', 'heatmap-legend-item', items);
+                var swatch = L.DomUtil.create('span', 'heatmap-legend-swatch', item);
+                swatch.style.backgroundColor = entry.color;
+                var label = L.DomUtil.create('span', 'heatmap-legend-label', item);
+                label.textContent = heatmapLegendLabel(index);
+            });
+            return legend;
+        }
+        var MAP_HALF = 20.48;
+        var MAP_SPAN = MAP_HALF * 2;
+
+        function heatmapBoundsHalf(bounds) {
+            // bounds are symmetric square like [[-h,-h],[h,h]]
+            return Math.abs(bounds[1][0]);
+        }
+
+        function heatmapTileSize(bounds) {
+            var half = heatmapBoundsHalf(bounds);
+            var span = half * 2;
+            return L.point(
+                span * Math.pow(2, HEATMAP_ZOOM) / HEATMAP_TILES,
+                span * Math.pow(2, HEATMAP_ZOOM) / HEATMAP_TILES
+            );
+        }
+
+        function heatmapTileOrigin(bounds) {
+            var half = heatmapBoundsHalf(bounds);
+            var tileSize = heatmapTileSize(bounds);
+            var s = L.CRS.Simple.scale(HEATMAP_ZOOM);
+            return {
+                minX: Math.floor(-half * s / tileSize.x),
+                minY: Math.floor(-half * s / tileSize.y)
+            };
+        }
+
+        function createHeatmapTileLayer(bounds) {
+            var origin = heatmapTileOrigin(bounds);
+            var tileSize = heatmapTileSize(bounds);
+            var layer = L.tileLayer('', {
+                tileSize: tileSize,
+                minNativeZoom: HEATMAP_ZOOM,
+                maxNativeZoom: HEATMAP_ZOOM,
+                maxZoom: 14,
+                bounds: bounds,
+                noWrap: true
+            });
+            layer.getTileUrl = function (coords) {
+                if (coords.z !== HEATMAP_ZOOM) return '';
+                var localX = coords.x - origin.minX;
+                var localY = coords.y - origin.minY;
+                if (localX < 0 || localX >= HEATMAP_TILES ||
+                    localY < 0 || localY >= HEATMAP_TILES) return '';
+                var index = localY * HEATMAP_TILES + localX;
+                return 'heatmap/output_' + index + '.png';
+            };
+            return layer;
+        }
+
+        function createHeatmapLayer(bounds, map) {
+            var overview = null;
+            var tiles = null;
+
+            function update() {
+                if (!overview) {
+                    overview = L.imageOverlay('./map-heat.png', bounds, { opacity: 1 });
+                    overview.addTo(map);
+                }
+
+                if (map.getZoom() > HEATMAP_MIN_TILE_ZOOM) {
+                    overview.setOpacity(0);
+                    if (!tiles) {
+                        tiles = createHeatmapTileLayer(bounds);
+                        tiles.addTo(map);
+                    }
+                } else {
+                    overview.setOpacity(1);
+                    if (tiles) {
+                        map.removeLayer(tiles);
+                        tiles = null;
+                    }
+                }                
+            }
+
+            return {
+                addTo: function (mapInstance) {
+                    map = mapInstance;
+                    map.on('zoom', update);
+                    map.on('zoomend', update);
+                    update();
+                    return this;
+                },
+                _heatmapCleanup: function () {
+                    map.off('zoom', update);
+                    map.off('zoomend', update);
+                    if (tiles) {
+                        map.removeLayer(tiles);
+                        tiles = null;
+                    }
+                    if (overview) {
+                        map.removeLayer(overview);
+                        overview = null;
+                    }
+                }
+            };
+        }
+
+        function initMap(pois, trenLines) {
+            var map = L.map('map', {
+                crs: L.CRS.Simple,
+                minZoom: 0,
+                maxZoom: 14,
+                zoomSnap: 0.25
+            });
+            var bounds = [[-20.48, -20.48], [20.48, 20.48]];
+            var currentOverlay = L.imageOverlay('map-dyna.jpg', bounds).addTo(map);
+            map.fitBounds(bounds);
+            var heatBoundsHalf = 20.48 * HEATMAP_BOUNDS_SCALE;
+            var heatBounds = [[-heatBoundsHalf, -heatBoundsHalf], [heatBoundsHalf, heatBoundsHalf]];
+            var heatmapLegendEl = null;
+
+            function setHeatmapLegendVisible(visible) {
+                if (heatmapLegendEl) {
+                    heatmapLegendEl.classList.toggle('hidden', !visible);
+                }
+            }
+
+            function removeMapOverlay(mapInstance) {
+                if (!currentOverlay) return;
+                if (currentOverlay._heatmapCleanup) {
+                    currentOverlay._heatmapCleanup();
+                } else {
+                    mapInstance.removeLayer(currentOverlay);
+                }
+                currentOverlay = null;
+            }
+
+            var MapSelectorControl = L.Control.extend({
+                options: {
+                    position: 'topright'
+                },
+                onAdd: function (mapInstance) {
+                    var container = L.DomUtil.create('div', 'leaflet-control map-selector-control');
+
+                    var label = L.DomUtil.create('label', '', container);
+                    label.setAttribute('for', 'mapSelect');
+                    label.innerHTML = 'Map:&nbsp;';
+
+                    var select = L.DomUtil.create('select', '', container);
+                    select.id = 'mapSelect';
+
+                    var optionJourney = L.DomUtil.create('option', '', select);
+                    optionJourney.value = 'map-journey.jpg';
+                    optionJourney.innerHTML = 'Journey';
+
+                    var optionDyna = L.DomUtil.create('option', '', select);
+                    optionDyna.value = 'map-dyna.jpg';
+                    optionDyna.selected = true;
+                    optionDyna.innerHTML = 'Dynamap';
+
+                    var optionHeat = L.DomUtil.create('option', '', select);
+                    optionHeat.value = 'heatmap';
+                    optionHeat.innerHTML = 'Heatmap';
+
+                    L.DomEvent.disableClickPropagation(container);
+
+                    select.addEventListener('change', function (e) {
+                        removeMapOverlay(mapInstance);
+                        var selected = e.target.value;
+                        if (selected === 'heatmap') {
+                            currentOverlay = createHeatmapLayer(heatBounds, mapInstance).addTo(mapInstance);
+                        } else {
+                            currentOverlay = L.imageOverlay(selected, bounds).addTo(mapInstance);
+                        }
+                        setHeatmapLegendVisible(selected === 'heatmap');
+                    });
+
+                    return container;
+                }
+            });
+
+            map.addControl(new MapSelectorControl());
+
+            L.rectangle([[20, 20], [-20, -20]], { color: '#911', fill: false }).addTo(map).bindPopup("World Border");
+
+            var groups = {};
+            var railwayGroup = L.layerGroup().addTo(map);
+            var markers = [];
+
+          pois.forEach(poi => {
+                if (!groups[poi.category]) {
+                        groups[poi.category] = L.layerGroup().addTo(map);
+                    }
+                var marker = L.marker(worldToMap(poi.x, poi.z), {
+                    icon: L.icon({
+                        iconUrl: "../marker/" + poi.color + '-marker.png',
+                        iconSize: [20, 30],
+                        iconAnchor: [10, 30],
+                        popupAnchor: [0, -30]
+                    }),
+                    name: poi.name,
+                    searchText: [poi.name, poi.dial].filter(Boolean).join(' ◈ ')
+                }).addTo(groups[poi.category]);
+                const infoLine = (poi.info && poi.info.trim().toLowerCase() !== (poi.name || '').trim().toLowerCase())
+                    ? `<br><mid>${poi.info}</mid>`
+                    : '';
+                marker.bindPopup(`<h3>${poi.name}</h3><mid>/dial <b>${poi.dial}</b></mid><br><sml>${poi.x}, ${poi.z}</sml>${infoLine}`).openPopup();
+                markers.push(marker);
+            });
+
+            trenLines.forEach(line => {
+                if (!Array.isArray(line.points)) return;
+                L.polyline(line.points, { color: line.color || '#ffffff' })
+                    .addTo(railwayGroup)
+                    .bindPopup(line.name || '');
+            });
+
+            var overlays = Object.assign({ Railways: railwayGroup }, groups);
+            L.control.layers(null, overlays).addTo(map);
+
+            var coordsControl = L.Control.extend({
+                options: {
+                    position: 'bottomleft'
+                },
+
+                onAdd: function (mapInstance) {
+                    var coordsDiv = L.DomUtil.create('div', 'coords-control');
+                    mapInstance.on('mousemove', function (e) {
+                        const world = mapToWorld(e.latlng.lat, e.latlng.lng);
+                        coordsDiv.innerHTML = 'Coordinates: ' +
+                            Math.round(world.x) + ', ' +
+                            Math.round(world.z);
+                    });
+                    return coordsDiv;
+                }
+            });
+
+            var heatmapLegendControl = L.Control.extend({
+                options: {
+                    position: 'bottomleft'
+                },
+
+                onAdd: function () {
+                    heatmapLegendEl = createHeatmapLegendEl();
+                    return heatmapLegendEl;
+                }
+            });
+
+            map.addControl(new coordsControl());
+            map.addControl(new heatmapLegendControl());
+
+            var markerGroup = L.layerGroup(markers).addTo(map);
+
+            L.control.search({
+                layer: markerGroup,
+                initial: false,
+                propertyName: 'searchText',
+                moveToLocation: function (latlng, title, mapInstance) {
+                    mapInstance.flyTo(latlng, 10);
+                }
+            }).addTo(map);
+        }
+
+        (async function () {
+            try {
+                const { pois, trenLines } = await loadData();
+                initMap(pois, trenLines);
+            } catch (err) {
+                console.error(err);
+                alert('Failed to load map data. Please try again later.');
+            }
+        })();
+    </script>
+
+    <div id="coords"></div>
+
+    <script src="../editor/editor.js"></script>
+</body>
+</html>

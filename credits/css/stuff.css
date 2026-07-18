@@ -1,0 +1,43 @@
+                .staff-list {
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    gap: 2em;
+                    justify-content: center; /* Ensures the last row is centered */
+                    justify-items: center;  /* Centers items within their grid cells */
+    margin-top: 2em;
+                }
+                .staff-member,.staff-member-you {
+                    text-align: center;
+                }
+ .staff-member {
+                    max-width: 20em;
+                }
+ .staff-member-you {
+                    width: 100%;
+                }
+                .staff-image {
+                    width: 10em;
+                    height: 10em;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-bottom: 1em;
+                }
+.staff-name {
+    font-size: 30px;
+}
+.staff-desc {
+    font-size: 20px;
+}
+               
+                @media (max-width: 50em) {
+                    .staff-list {
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+                }
+
+                @media (max-width: 30em) {
+                    .staff-list {
+                        grid-template-columns: repeat(1, minmax(0, 1fr));
+                    }
+                }
+            
