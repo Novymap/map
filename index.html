@@ -56,7 +56,7 @@
             const pois = [];
             if (markerData && markerData.sets) {
                 Object.values(markerData.sets).forEach(set => {
-                    const category = set.label || 'Markers';
+                    const category = set.group || 'Markers';
                     const markers = set.markers || {};
                     Object.values(markers).forEach(m => {
                         const x = Number(m.x);

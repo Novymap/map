@@ -1,12 +1,7 @@
 {
     "sets": {
         "1": {
-            "hide": false,
-            "circles": {},
-            "areas": {},
-            "label": "Dial (Build)",
-            "lines": {},
-            "layerprio": 1,
+            "group": "Dial (Build)",
             "markers": {
                 "1": {
                     "label": "New Caprica",
@@ -7174,12 +7169,7 @@
             }
         },
         "2": {
-            "hide": false,
-            "circles": {},
-            "areas": {},
-            "label": "Dial (Farm)",
-            "lines": {},
-            "layerprio": 1,
+            "group": "Dial (Farm)",
             "markers": {
                 "64": {
                     "label": "Get Powder",
@@ -8113,12 +8103,7 @@
             }
         },
         "3": {
-            "hide": false,
-            "circles": {},
-            "areas": {},
-            "label": "Dial (Shop)",
-            "lines": {},
-            "layerprio": 1,
+            "group": "Dial (Shop)",
             "markers": {
                 "148": {
                     "label": "Pawn Shop",
@@ -8843,12 +8828,7 @@
             }
         },
         "4": {
-            "hide": false,
-            "circles": {},
-            "areas": {},
-            "label": "Dial (Other)",
-            "lines": {},
-            "layerprio": 1,
+            "group": "Dial (Other)",
             "markers": {
                 "270": {
                     "label": "Super Smelter",
@@ -8983,12 +8963,7 @@
             }
         },
         "5": {
-            "hide": false,
-            "circles": {},
-            "areas": {},
-            "label": "Dial (Station)",
-            "lines": {},
-            "layerprio": 1,
+            "group": "Dial (Station)",
             "markers": {
                 "162": {
                     "label": "Amutsuri Beloved Island Station",
@@ -9713,12 +9688,7 @@
             }
         },
         "7": {
-            "hide": false,
-            "circles": {},
-            "areas": {},
-            "label": "Dial (WXT)",
-            "lines": {},
-            "layerprio": 1,
+            "group": "Dial (WXT)",
             "markers": {
                 "138": {
                     "label": "AwEsUm Land",
@@ -10253,12 +10223,7 @@
             }
         },
         "8": {
-            "hide": false,
-            "circles": {},
-            "areas": {},
-            "label": "Dial (Dial)",
-            "lines": {},
-            "layerprio": 1,
+            "group": "Dial (Dial)",
             "markers": {
                 "843": {
                     "label": "West 8Spawn",
@@ -10283,12 +10248,7 @@
             }
         },
         "38": {
-            "hide": false,
-            "circles": {},
-            "areas": {},
-            "label": "Dial (PVP Arena)",
-            "lines": {},
-            "layerprio": 1,
+            "group": "Dial (PVP Arena)",
             "markers": {
                 "521": {
                     "label": "Get Killed",
@@ -10393,8 +10353,6 @@
             }
         },
         "markers": {
-            "hide": false,
-            "circles": {},
             "areas": {
                 "_worldborder_world": {
                     "fillcolor": "#000000",
@@ -10422,10 +10380,7 @@
                 }
             },
             "label": "World Border",
-            "markers": [],
-            "lines": [],
             "layerprio": 0
         }
-    },
-    "timestamp": 1771206821796
+    }
 }
