@@ -10,6 +10,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 IMAGES_DIR = Path(__file__).parent / "images"
 TILE_SIZE = 128
 
+HEADERS = {
+    "User-Agent": "Novymap"
+}
 
 def zoom_to_suffix(zoom: int) -> str:
     mapping = {
@@ -42,7 +45,7 @@ def zoom_to_step(zoom: int) -> int:
 
 
 def download_image(url: str, filename: Path) -> None:
-    resp = requests.get(url, timeout=30)
+    resp = requests.get(url,headers=HEADERS, timeout=30)
     resp.raise_for_status()
     filename.write_bytes(resp.content)
     #maybe i can make a better loading bar but this works and technically gives more info which could be useful
