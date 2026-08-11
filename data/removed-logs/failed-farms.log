@@ -1,0 +1,11 @@
+[index=259] dial="getsculk2" reason=no_teleport
+[index=267] dial="getbamboo4 getplank3" reason=no_teleport
+[index=268] dial="getbamboo5 getplank4" reason=no_teleport
+[index=504] dial="getredsand" reason=no_teleport
+[index=525] dial="getdogarmour getarmadillo getarmour getarmor" reason=no_teleport
+[index=602] dial="getpetal" reason=no_teleport
+[index=603] dial="getsplash" reason=no_teleport
+[index=964] dial="getsuger2" reason=no_teleport
+[index=976] dial="GoldWinXP" reason=no_teleport
+[index=977] dial="" reason=invalid_empty
+[index=978] dial="carrots" reason=no_teleport

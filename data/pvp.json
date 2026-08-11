@@ -1,85 +1,93 @@
 {
-    "group": "PVP",
-    "markers": {
-        "521": {
-            "label": "Get Killed",
-            "desc": "PvP Zone and town owned by TomDaltz",
-            "x": "10209",
-            "y": "64",
-            "z": "-3340",
-            "dial": "getkilled"
-        },
-        "537": {
-            "label": "sumo",
-            "desc": "Sumo PvP Zone",
-            "x": "6048",
-            "y": "64",
-            "z": "-8025",
-            "dial": "SUMO"
-        },
-        "541": {
-            "label": "SkyBattle",
-            "desc": "It might be old and the dial no longer works but the pvp still works here. Owned by Exault (tobi140)",
-            "x": "-7182",
-            "y": "64",
-            "z": "-9409",
-            "dial": "N/A"
-        },
-        "549": {
-            "label": "Cthulhuland Sumo",
-            "desc": "PvP Zone at Cthulhuland. Created by HeroSuperDylan",
-            "x": "-12992",
-            "y": "64",
-            "z": "5412",
-            "dial": "sumo"
-        },
-        "631": {
-            "label": "Red PVP",
-            "desc": "Created by Eoarchean. Dial created by Doozie",
-            "x": "-19962",
-            "y": "64",
-            "z": "-14356",
-            "dial": "redpvp"
-        },
-        "749": {
-            "label": "warzone",
-            "desc": "PvP Arena built by Nick2011",
-            "x": "-12882",
-            "y": "64",
-            "z": "1779",
-            "dial": "warzone"
-        },
-        "914": {
-            "label": "ffarena",
-            "desc": "keep inv on",
-            "x": "-14621",
-            "y": "64",
-            "z": "-13855",
-            "dial": "ffarena"
-        },
-        "950": {
-            "label": "arena",
-            "desc": "arena in ancient city",
-            "x": "-13215",
-            "y": "-43",
-            "z": "-15272",
-            "dial": "arena"
-        },
-        "974": {
-            "label": "kotl",
-            "desc": "",
-            "x": "2031",
-            "y": "72",
-            "z": "6419",
-            "dial": "kotl"
-        },
-        "975": {
-            "label": "cowhouse",
-            "desc": "",
-            "x": "1994",
-            "y": "72",
-            "z": "6431",
-            "dial": "N/A"
-        }
+  "group": "PVP",
+  "markers": {
+    "1": {
+      "label": "Get Killed",
+      "desc": "PvP Zone and town owned by TomDaltz",
+      "x": "10209.5",
+      "y": "65.0",
+      "z": "-3339.5",
+      "dial": "getkilled"
+    },
+    "2": {
+      "label": "sumo",
+      "desc": "Sumo PvP Zone",
+      "x": "6048.5",
+      "y": "108.0",
+      "z": "-8025.5",
+      "dial": "SUMO"
+    },
+    "3": {
+      "label": "Cthulhuland Sumo",
+      "desc": "PvP Zone at Cthulhuland. Created by HeroSuperDylan",
+      "x": "-12992.5",
+      "y": "66.0",
+      "z": "5412.5",
+      "dial": "sumo"
+    },
+    "4": {
+      "label": "Red PVP",
+      "desc": "Created by Eoarchean. Dial created by Doozie",
+      "x": "-19962.5",
+      "y": "72.0",
+      "z": "-14356.5",
+      "dial": "redpvp"
+    },
+    "5": {
+      "label": "warzone",
+      "desc": "PvP Arena built by Nick2011",
+      "x": "-12881.5",
+      "y": "80.0",
+      "z": "1779.5",
+      "dial": "warzone"
+    },
+    "6": {
+      "label": "ffarena",
+      "desc": "keep inv on",
+      "x": "-14618.5",
+      "y": "66.0",
+      "z": "-13854.5",
+      "dial": "ffarena"
+    },
+    "7": {
+      "label": "arena",
+      "desc": "arena in ancient city",
+      "x": "-13215.5",
+      "y": "-43.0",
+      "z": "-15276.5",
+      "dial": "arena"
+    },
+    "8": {
+      "label": "kotl",
+      "desc": "",
+      "x": "2031.5",
+      "y": "72.0",
+      "z": "6420.5",
+      "dial": "kotl"
+    },
+    "9": {
+      "label": "SkyBattle",
+      "desc": "It might be old and the dial no longer works but the pvp still works here. Owned by Exault (tobi140)",
+      "x": "-7182",
+      "y": "64",
+      "z": "-9409",
+      "dial": "N/A"
+    },
+    "10": {
+      "label": "cowhouse",
+      "desc": "",
+      "x": "1994",
+      "y": "72",
+      "z": "6431",
+      "dial": "N/A"
+    },
+    "11": {
+      "label": "shpoobase",
+      "desc": "Doozie",
+      "x": "-8688.5",
+      "y": "134",
+      "z": "9379.5",
+      "dial": "shpoobase"
     }
+  }
 }

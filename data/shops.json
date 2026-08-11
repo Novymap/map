@@ -1,581 +1,525 @@
 {
-        "group": "Shops",
-        "markers": {
-            "148": {
-                "label": "Pawn Shop",
-                "desc": "Created by budd9570. Dial recreated by Doozie",
-                "x": "5713",
-                "y": "65",
-                "z": "2494",
-                "dial": "pawnshop"
-            },
-            "160": {
-                "label": "Furnace Shop",
-                "desc": "A shop made by average furnace block enthusiast.",
-                "x": "-6739",
-                "y": "64",
-                "z": "-14762",
-                "dial": "furnaceshop"
-            },
-            "192": {
-                "label": "Rainbow Valley Shopping Centre (14 Mall)",
-                "desc": "A public mall near 14 spawn. Created by Serenada",
-                "x": "-19275",
-                "y": "68",
-                "z": "-17070",
-                "dial": "mall mall1 mall2"
-            },
-            "193": {
-                "label": "Marc Shop",
-                "desc": "Shop built by Princess MarcLeduc.",
-                "x": "6912",
-                "y": "24",
-                "z": "10040",
-                "dial": "marcshop"
-            },
-            "195": {
-                "label": "Cat Shop",
-                "desc": "Created by scats_",
-                "x": "-15425",
-                "y": "60",
-                "z": "15843",
-                "dial": "catshop"
-            },
-            "203": {
-                "label": "Unishop",
-                "desc": "N/A",
-                "x": "-15893",
-                "y": "64",
-                "z": "-14511",
-                "dial": "unishop"
-            },
-            "219": {
-                "label": "Tyler Shop",
-                "desc": "N/A",
-                "x": "9458",
-                "y": "64",
-                "z": "18079",
-                "dial": "tylershop"
-            },
-            "220": {
-                "label": "eShop",
-                "desc": "N/A",
-                "x": "-19420",
-                "y": "64",
-                "z": "-19601",
-                "dial": "ehill"
-            },
-            "242": {
-                "label": "Green Shop",
-                "desc": "N/A",
-                "x": "-18909",
-                "y": "64",
-                "z": "-16787",
-                "dial": "greenshop"
-            },
-            "271": {
-                "label": "Network For Gamers (NFG)",
-                "desc": "N/A",
-                "x": "12037",
-                "y": "64",
-                "z": "-17440",
-                "dial": "nfg"
-            },
-            "272": {
-                "label": "Felix Shop",
-                "desc": "N/A",
-                "x": "-13075",
-                "y": "64",
-                "z": "-14086",
-                "dial": "felixshop"
-            },
-            "273": {
-                "label": "Get Shulker",
-                "desc": "N/A",
-                "x": "-13489",
-                "y": "64",
-                "z": "-17734",
-                "dial": "getshulker"
-            },
-            "274": {
-                "label": "Atom Shop",
-                "desc": "N/A",
-                "x": "-18682",
-                "y": "64",
-                "z": "1598",
-                "dial": "atomshop"
-            },
-            "275": {
-                "label": "Fletmart",
-                "desc": "N/A",
-                "x": "11607",
-                "y": "64",
-                "z": "-11436",
-                "dial": "fletmart"
-            },
-            "281": {
-                "label": "Costco",
-                "desc": "N/A",
-                "x": "-17768",
-                "y": "64",
-                "z": "-16673",
-                "dial": "costco"
-            },
-            "282": {
-                "label": "Sears",
-                "desc": "N/A",
-                "x": "-16707",
-                "y": "64",
-                "z": "-18094",
-                "dial": "sears"
-            },
-            "283": {
-                "label": "Who Shop",
-                "desc": "N/A",
-                "x": "-13333",
-                "y": "64",
-                "z": "-15959",
-                "dial": "whoshop"
-            },
-            "284": {
-                "label": "Shulk",
-                "desc": "N/A",
-                "x": "-1717",
-                "y": "64",
-                "z": "-6461",
-                "dial": "shulk"
-            },
-            "285": {
-                "label": "Bulk",
-                "desc": "N/A",
-                "x": "-1670",
-                "y": "64",
-                "z": "-6492",
-                "dial": "bulk"
-            },
-            "286": {
-                "label": "Bloxshop",
-                "desc": "N/A",
-                "x": "-17804",
-                "y": "64",
-                "z": "-17574",
-                "dial": "bloxshop"
-            },
-            "287": {
-                "label": "Honey Cat",
-                "desc": "N/A",
-                "x": "-14132",
-                "y": "64",
-                "z": "-15440",
-                "dial": "honeycat"
-            },
-            "290": {
-                "label": "Frogshop",
-                "desc": "N/A",
-                "x": "-14470",
-                "y": "64",
-                "z": "-14230",
-                "dial": "frogshop"
-            },
-            "293": {
-                "label": "StIordsMall",
-                "desc": "N/A",
-                "x": "-4624",
-                "y": "64",
-                "z": "-15737",
-                "dial": "StIordsMall"
-            },
-            "303": {
-                "label": "Dakshop",
-                "desc": "N/A",
-                "x": "-18855",
-                "y": "64",
-                "z": "-16782",
-                "dial": "dakshop"
-            },
-            "315": {
-                "label": "Niche Arts",
-                "desc": "Mapart and player skull shop by kostyik.",
-                "x": "-19158",
-                "y": "64",
-                "z": "-19074",
-                "dial": "Nichearts"
-            },
-            "316": {
-                "label": "LaNiche",
-                "desc": "Shop by kostyik.",
-                "x": "-19296",
-                "y": "64",
-                "z": "-19070",
-                "dial": "LaNiche"
-            },
-            "317": {
-                "label": "10k10k Shop",
-                "desc": "N/A",
-                "x": "10081",
-                "y": "64",
-                "z": "10002",
-                "dial": "10k10kshop"
-            },
-            "367": {
-                "label": "Speakeasy Bar",
-                "desc": "Kettleville Bar",
-                "x": "-16427",
-                "y": "64",
-                "z": "-13806",
-                "dial": "speakeasy"
-            },
-            "370": {
-                "label": "Turtle Shop",
-                "desc": "Shop by TurtleMc0 with help from Dakto_",
-                "x": "-17677",
-                "y": "64",
-                "z": "-13498",
-                "dial": "turtleshop"
-            },
-            "404": {
-                "label": "Frogpride",
-                "desc": "N/A",
-                "x": "-14618",
-                "y": "64",
-                "z": "-14018",
-                "dial": "frogpride"
-            },
-            "416": {
-                "label": "Creeper Shop",
-                "desc": "Shop operated by ClassyCreeper27",
-                "x": "-8663",
-                "y": "64",
-                "z": "-16038",
-                "dial": "creepershop"
-            },
-            "419": {
-                "label": "Creeper Town Mall",
-                "desc": "Mall owned by ClassyCreeper27 and made with\r\nofficial PukTown Bricks",
-                "x": "-9587",
-                "y": "64",
-                "z": "-15661",
-                "dial": "creepermall"
-            },
-            "431": {
-                "label": "Old Cat Shop",
-                "desc": "Owned by scats_\r\nShop is no longer stocked",
-                "x": "18647",
-                "y": "64",
-                "z": "-14213",
-                "dial": "oldcatshop"
-            },
-            "435": {
-                "label": "Quad Shop",
-                "desc": "Shop created by QuadRadical",
-                "x": "-9722",
-                "y": "64",
-                "z": "-9358",
-                "dial": "quadshop"
-            },
-            "436": {
-                "label": "Realm Store",
-                "desc": "Shop created by Doeboy6oo00",
-                "x": "-423",
-                "y": "64",
-                "z": "10246",
-                "dial": "realmstore"
-            },
-            "438": {
-                "label": "Oante Shop",
-                "desc": "Shop created by Oante",
-                "x": "11963",
-                "y": "64",
-                "z": "-14675",
-                "dial": "oshop"
-            },
-            "439": {
-                "label": "Blick Shop",
-                "desc": "Shop Created by BlickUp420",
-                "x": "-19680",
-                "y": "64",
-                "z": "-16459",
-                "dial": "Shop420"
-            },
-            "440": {
-                "label": "MCBoogles",
-                "desc": "Shop created by Tboogle",
-                "x": "-14075",
-                "y": "64",
-                "z": "-14287",
-                "dial": "mcboogles"
-            },
-            "447": {
-                "label": "Pride Cottage",
-                "desc": "Shop created by cat_boy_13",
-                "x": "-18375",
-                "y": "64",
-                "z": "-16993",
-                "dial": "pride"
-            },
-            "456": {
-                "label": "Blox Brew",
-                "desc": "Shop created by MrBloxMan",
-                "x": "-7548",
-                "y": "64",
-                "z": "7840",
-                "dial": "bloxbrew"
-            },
-            "475": {
-                "label": "IKEA",
-                "desc": "Shop? Created by pumppie216",
-                "x": "-19286",
-                "y": "64",
-                "z": "-11175",
-                "dial": "ikea"
-            },
-            "496": {
-                "label": "Northern Star Shopping Centre",
-                "desc": "Mall owned by Serenada and Sparkeen",
-                "x": "-7297",
-                "y": "64",
-                "z": "-623",
-                "dial": "nssc"
-            },
-            "505": {
-                "label": "tomshop",
-                "desc": "Shop built by TomDaltz",
-                "x": "-12071",
-                "y": "64",
-                "z": "-16031",
-                "dial": "tomshop"
-            },
-            "508": {
-                "label": "Bob Shop",
-                "desc": "Shop created by __bobthebuilder_. Can He Fix it!? Yes He can!!!",
-                "x": "-14874",
-                "y": "64",
-                "z": "-12784",
-                "dial": "bobshop"
-            },
-            "510": {
-                "label": "Lord Shop",
-                "desc": "Shop created by DivergentCat (AKA lordoffire10). Stargate Provided by Doozie",
-                "x": "5906",
-                "y": "64",
-                "z": "-7205",
-                "dial": "LordShop"
-            },
-            "514": {
-                "label": "Jmall (Whose Mall)",
-                "desc": "Mall created by Whose__",
-                "x": "-13231",
-                "y": "64",
-                "z": "-15960",
-                "dial": "Jmall"
-            },
-            "516": {
-                "label": "Aly Shop",
-                "desc": "Shop built by AlyQT",
-                "x": "-18702",
-                "y": "64",
-                "z": "-15726",
-                "dial": "alyshop"
-            },
-            "538": {
-                "label": "Trial Shop",
-                "desc": "Shop selling all loot from trial chambers. Owned by Gossinger and Justinminers",
-                "x": "-11869",
-                "y": "64",
-                "z": "-10815",
-                "dial": "trialshop"
-            },
-            "580": {
-                "label": "Starlight V2 + lsshop",
-                "desc": "Shop and base owned and maintained by lspiter",
-                "x": "-10688",
-                "y": "64",
-                "z": "-13817",
-                "dial": "starlight, lsshop"
-            },
-            "600": {
-                "label": "Kentucky Fried Chicken",
-                "desc": "Created by Rukaa101",
-                "x": "-12200",
-                "y": "64",
-                "z": "-15562",
-                "dial": "kfc"
-            },
-            "604": {
-                "label": "Pop Shop",
-                "desc": "Shop created by PetePop5",
-                "x": "-18682",
-                "y": "64",
-                "z": "-16570",
-                "dial": "POPSHOP"
-            },
-            "620": {
-                "label": "Nether Shop",
-                "desc": "Shop created by NooWtf",
-                "x": "-11736",
-                "y": "64",
-                "z": "-15811",
-                "dial": "nethershop"
-            },
-            "638": {
-                "label": "USSR Shop",
-                "desc": "Created by theoristgoose",
-                "x": "-13933",
-                "y": "64",
-                "z": "-12185",
-                "dial": "ussrshop"
-            },
-            "650": {
-                "label": "Malo Mart",
-                "desc": "Shop created by MaloMastersYT24",
-                "x": "-16900",
-                "y": "64",
-                "z": "11832",
-                "dial": "MaloMart"
-            },
-            "677": {
-                "label": "Teddy Shop",
-                "desc": "Created by TeddyMcCozy",
-                "x": "-9791",
-                "y": "64",
-                "z": "7784",
-                "dial": "teddyshop"
-            },
-            "729": {
-                "label": "Aiden Shop",
-                "desc": "Created by Racing_Aiden",
-                "x": "-12083",
-                "y": "64",
-                "z": "-11412",
-                "dial": "aidenshop"
-            },
-            "731": {
-                "label": "Lrif Shop",
-                "desc": "Created by lrif",
-                "x": "3418",
-                "y": "64",
-                "z": "19830",
-                "dial": "lrifshop"
-            },
-            "782": {
-                "label": "Maple Shop",
-                "desc": "Shop created by BicolourMaple48",
-                "x": "-17787",
-                "y": "64",
-                "z": "-10117",
-                "dial": "mapleshop"
-            },
-            "835": {
-                "label": "Padar Shop",
-                "desc": "Created by Its_Padar",
-                "x": "-16453",
-                "y": "63",
-                "z": "-12462",
-                "dial": "padarshop"
-            },
-            "839": {
-                "label": "Paul Mall",
-                "desc": "Created by uncle_paul. Dial reactivated by Doozie. Mall no longer works, perhaps due to sign data loss",
-                "x": "7953",
-                "y": "65",
-                "z": "4286",
-                "dial": "paulmall"
-            },
-            "844": {
-                "label": "Dane Shop",
-                "desc": "Created by jonashou. Dial reactivated by Doozie",
-                "x": "7631",
-                "y": "65",
-                "z": "3881",
-                "dial": "Daneshop"
-            },
-            "891": {
-                "label": "Kip Shop",
-                "desc": "shop built by King_Mudkip",
-                "x": "-2835",
-                "y": "66",
-                "z": "-11010",
-                "dial": "kipshop"
-            },
-            "905": {
-                "label": "iperal",
-                "desc": "fungo128k n sofia_g_11 shop",
-                "x": "-19784",
-                "y": "63",
-                "z": "-15788",
-                "dial": "iperal"
-            },
-            "937": {
-                "label": "Geode Shop",
-                "desc": "Created by Aiden_64",
-                "x": "-12473",
-                "y": "-42",
-                "z": "-11456",
-                "dial": "geode"
-            },
-            "938": {
-                "label": "roboshop",
-                "desc": "",
-                "x": "8193",
-                "y": "64",
-                "z": "-17534",
-                "dial": "roboshop"
-            },
-            "939": {
-                "label": "watershop",
-                "desc": "",
-                "x": "-14823",
-                "y": "64",
-                "z": "16282",
-                "dial": "dial watershop"
-            },
-            "940": {
-                "label": "trishop",
-                "desc": "",
-                "x": "-10627",
-                "y": "64",
-                "z": "-13795",
-                "dial": "trishop"
-            },
-            "941": {
-                "label": "Eniuu Shop",
-                "desc": "",
-                "x": "-19018",
-                "y": "64",
-                "z": "-10122",
-                "dial": "eniuushop"
-            },
-            "942": {
-                "label": "BajShop",
-                "desc": "Bajan Shop",
-                "x": "-9218",
-                "y": "64",
-                "z": "-19688",
-                "dial": "bajshop"
-            },
-            "943": {
-                "label": "Ordawnia Markets",
-                "desc": "",
-                "x": "-14692",
-                "y": "64",
-                "z": "-11638",
-                "dial": "OrdawniaMarkets"
-            },
-            "944": {
-                "label": "watershop",
-                "desc": "",
-                "x": "-14823",
-                "y": "64",
-                "z": "16282",
-                "dial": "watershop"
-            },
-            "945": {
-                "label": "Amyshop",
-                "desc": "",
-                "x": "18925",
-                "y": "64",
-                "z": "-12286",
-                "dial": "amyshop"
-            }
-        }
+  "group": "Shops",
+  "markers": {
+    "1": {
+      "label": "Pawn Shop",
+      "desc": "Created by budd9570. Dial recreated by Doozie",
+      "x": "5713.5",
+      "y": "65.0",
+      "z": "2494.5",
+      "dial": "pawnshop"
+    },
+    "2": {
+      "label": "Furnace Shop",
+      "desc": "A shop made by average furnace block enthusiast.",
+      "x": "-6735.5",
+      "y": "-39.0",
+      "z": "-14761.5",
+      "dial": "furnaceshop"
+    },
+    "3": {
+      "label": "Rainbow Valley Shopping Centre (14 Mall)",
+      "desc": "A public mall near 14 spawn. Created by Serenada",
+      "x": "-19274.5",
+      "y": "68.0",
+      "z": "-17069.5",
+      "dial": "mall mall1 mall2"
+    },
+    "4": {
+      "label": "Marc Shop",
+      "desc": "Shop built by Princess MarcLeduc.",
+      "x": "6912.5",
+      "y": "24.0",
+      "z": "10040.5",
+      "dial": "marcshop"
+    },
+    "5": {
+      "label": "Cat Shop",
+      "desc": "Created by scats_",
+      "x": "-15424.5",
+      "y": "60.0",
+      "z": "15843.5",
+      "dial": "catshop"
+    },
+    "6": {
+      "label": "Unishop",
+      "desc": "N/A",
+      "x": "-15889.5",
+      "y": "-2.0",
+      "z": "-14510.5",
+      "dial": "unishop"
+    },
+    "7": {
+      "label": "Tyler Shop",
+      "desc": "N/A",
+      "x": "9419.5",
+      "y": "39.0",
+      "z": "18056.5",
+      "dial": "tylershop"
+    },
+    "8": {
+      "label": "eShop",
+      "desc": "N/A",
+      "x": "-19419.5",
+      "y": "86.0",
+      "z": "-19603.5",
+      "dial": "ehill"
+    },
+    "9": {
+      "label": "Green Shop",
+      "desc": "N/A",
+      "x": "-18905.5",
+      "y": "81.0",
+      "z": "-16786.5",
+      "dial": "greenshop"
+    },
+    "10": {
+      "label": "Network For Gamers (NFG)",
+      "desc": "N/A",
+      "x": "12037.5",
+      "y": "34.0",
+      "z": "-17442.5",
+      "dial": "nfg"
+    },
+    "11": {
+      "label": "Get Shulker",
+      "desc": "N/A",
+      "x": "-13488.5",
+      "y": "90.0",
+      "z": "-17730.5",
+      "dial": "getshulker"
+    },
+    "12": {
+      "label": "Atom Shop",
+      "desc": "N/A",
+      "x": "-18684.5",
+      "y": "-7.0",
+      "z": "1598.5",
+      "dial": "atomshop"
+    },
+    "13": {
+      "label": "Fletmart",
+      "desc": "N/A",
+      "x": "11610.5",
+      "y": "-15.0",
+      "z": "-11435.5",
+      "dial": "fletmart"
+    },
+    "14": {
+      "label": "Costco",
+      "desc": "N/A",
+      "x": "-17644.5",
+      "y": "73.0",
+      "z": "-16629.5",
+      "dial": "costco"
+    },
+    "15": {
+      "label": "Sears",
+      "desc": "N/A",
+      "x": "-16706.5",
+      "y": "64.0",
+      "z": "-18096.5",
+      "dial": "sears"
+    },
+    "16": {
+      "label": "Who Shop",
+      "desc": "N/A",
+      "x": "-13332.5",
+      "y": "126.0",
+      "z": "-15955.5",
+      "dial": "whoshop"
+    },
+    "17": {
+      "label": "Shulk",
+      "desc": "N/A",
+      "x": "-1716.5",
+      "y": "-14.0",
+      "z": "-6463.5",
+      "dial": "shulk"
+    },
+    "18": {
+      "label": "Bulk",
+      "desc": "N/A",
+      "x": "-1673.5",
+      "y": "84.0",
+      "z": "-6491.5",
+      "dial": "bulk"
+    },
+    "19": {
+      "label": "Bloxshop",
+      "desc": "N/A",
+      "x": "-17806.5",
+      "y": "101.0",
+      "z": "-17573.5",
+      "dial": "bloxshop"
+    },
+    "20": {
+      "label": "Honey Cat",
+      "desc": "N/A",
+      "x": "-14131.5",
+      "y": "105.0",
+      "z": "-15442.5",
+      "dial": "honeycat"
+    },
+    "21": {
+      "label": "Frogshop",
+      "desc": "N/A",
+      "x": "-14406.5",
+      "y": "80.0",
+      "z": "-13953.5",
+      "dial": "frogshop"
+    },
+    "22": {
+      "label": "StIordsMall",
+      "desc": "N/A",
+      "x": "-4623.5",
+      "y": "38.0",
+      "z": "-15739.5",
+      "dial": "StIordsMall"
+    },
+    "23": {
+      "label": "Niche Arts",
+      "desc": "Mapart and player skull shop by kostyik.",
+      "x": "-19154.5",
+      "y": "65.0",
+      "z": "-19073.5",
+      "dial": "Nichearts"
+    },
+    "24": {
+      "label": "LaNiche",
+      "desc": "Shop by kostyik.",
+      "x": "-19295.5",
+      "y": "69.0",
+      "z": "-19072.5",
+      "dial": "LaNiche"
+    },
+    "25": {
+      "label": "10k10k Shop",
+      "desc": "N/A",
+      "x": "10084.5",
+      "y": "63.0",
+      "z": "10002.5",
+      "dial": "10k10kshop"
+    },
+    "26": {
+      "label": "Speakeasy Bar",
+      "desc": "Kettleville Bar",
+      "x": "-16426.5",
+      "y": "113.0",
+      "z": "-13805.5",
+      "dial": "speakeasy"
+    },
+    "27": {
+      "label": "Turtle Shop",
+      "desc": "Shop by TurtleMc0 with help from Dakto_",
+      "x": "-17676.5",
+      "y": "73.0",
+      "z": "-13497.5",
+      "dial": "turtleshop"
+    },
+    "28": {
+      "label": "Frogpride",
+      "desc": "N/A",
+      "x": "-14617.5",
+      "y": "71.0",
+      "z": "-14014.5",
+      "dial": "frogpride"
+    },
+    "29": {
+      "label": "Creeper Shop",
+      "desc": "Shop operated by ClassyCreeper27",
+      "x": "-8662.5",
+      "y": "67.0",
+      "z": "-16037.5",
+      "dial": "creepershop"
+    },
+    "30": {
+      "label": "Old Cat Shop",
+      "desc": "Owned by scats_\r\nShop is no longer stocked",
+      "x": "18647.5",
+      "y": "68.0",
+      "z": "-14213.5",
+      "dial": "oldcatshop"
+    },
+    "31": {
+      "label": "Quad Shop",
+      "desc": "Shop created by QuadRadical",
+      "x": "-9722.5",
+      "y": "104.0",
+      "z": "-9358.5",
+      "dial": "quadshop"
+    },
+    "32": {
+      "label": "Realm Store",
+      "desc": "Shop created by Doeboy6oo00",
+      "x": "-423.5",
+      "y": "16.0",
+      "z": "10246.5",
+      "dial": "realmstore"
+    },
+    "33": {
+      "label": "Oante Shop",
+      "desc": "Shop created by Oante",
+      "x": "11963.5",
+      "y": "41.0",
+      "z": "-14675.5",
+      "dial": "oshop"
+    },
+    "34": {
+      "label": "Blick Shop",
+      "desc": "Shop Created by BlickUp420",
+      "x": "-19680.5",
+      "y": "2.0",
+      "z": "-16459.5",
+      "dial": "Shop420"
+    },
+    "35": {
+      "label": "MCBoogles",
+      "desc": "Shop created by Tboogle",
+      "x": "-14075.5",
+      "y": "64.0",
+      "z": "-14287.5",
+      "dial": "mcboogles"
+    },
+    "36": {
+      "label": "Pride Cottage",
+      "desc": "Shop created by cat_boy_13",
+      "x": "-18375.5",
+      "y": "113.0",
+      "z": "-16993.5",
+      "dial": "pride"
+    },
+    "37": {
+      "label": "Blox Brew",
+      "desc": "Shop created by MrBloxMan",
+      "x": "-7548.5",
+      "y": "71.0",
+      "z": "7840.5",
+      "dial": "bloxbrew"
+    },
+    "38": {
+      "label": "IKEA",
+      "desc": "Shop? Created by pumppie216",
+      "x": "-19286.5",
+      "y": "64.0",
+      "z": "-11175.5",
+      "dial": "ikea"
+    },
+    "39": {
+      "label": "Northern Star Shopping Centre",
+      "desc": "Mall owned by Serenada and Sparkeen",
+      "x": "-7297.5",
+      "y": "65.0",
+      "z": "-623.5",
+      "dial": "nssc"
+    },
+    "40": {
+      "label": "tomshop",
+      "desc": "Shop built by TomDaltz",
+      "x": "-12071.5",
+      "y": "-58.0",
+      "z": "-16031.5",
+      "dial": "tomshop"
+    },
+    "41": {
+      "label": "Bob Shop",
+      "desc": "Shop created by __bobthebuilder_. Can He Fix it!? Yes He can!!!",
+      "x": "-14874.5",
+      "y": "63.0",
+      "z": "-12784.5",
+      "dial": "bobshop"
+    },
+    "42": {
+      "label": "Lord Shop",
+      "desc": "Shop created by DivergentCat (AKA lordoffire10). Stargate Provided by Doozie",
+      "x": "5906.5",
+      "y": "64.0",
+      "z": "-7205.5",
+      "dial": "LordShop"
+    },
+    "43": {
+      "label": "Jmall (Whose Mall)",
+      "desc": "Mall created by Whose__",
+      "x": "-13231.5",
+      "y": "87.0",
+      "z": "-15960.5",
+      "dial": "Jmall"
+    },
+    "44": {
+      "label": "Aly Shop",
+      "desc": "Shop built by AlyQT",
+      "x": "-18701.5",
+      "y": "40.0",
+      "z": "-15725.5",
+      "dial": "alyshop"
+    },
+    "45": {
+      "label": "Trial Shop",
+      "desc": "Shop selling all loot from trial chambers. Owned by Gossinger and Justinminers",
+      "x": "-11876.5",
+      "y": "-8.0",
+      "z": "-10818.5",
+      "dial": "trialshop"
+    },
+    "46": {
+      "label": "Kentucky Fried Chicken",
+      "desc": "Created by Rukaa101",
+      "x": "-12200.5",
+      "y": "83.0",
+      "z": "-15562.5",
+      "dial": "kfc"
+    },
+    "47": {
+      "label": "Pop Shop",
+      "desc": "Shop created by PetePop5",
+      "x": "-18681.5",
+      "y": "104.0",
+      "z": "-16570.5",
+      "dial": "POPSHOP"
+    },
+    "48": {
+      "label": "Nether Shop",
+      "desc": "Shop created by NooWtf",
+      "x": "-11735.5",
+      "y": "121.0",
+      "z": "-15810.5",
+      "dial": "nethershop"
+    },
+    "49": {
+      "label": "USSR Shop",
+      "desc": "Created by theoristgoose",
+      "x": "-13933.5",
+      "y": "15.0",
+      "z": "-12185.5",
+      "dial": "ussrshop"
+    },
+    "50": {
+      "label": "Teddy Shop",
+      "desc": "Created by TeddyMcCozy",
+      "x": "-9784.5",
+      "y": "72.0",
+      "z": "7778.5",
+      "dial": "teddyshop"
+    },
+    "51": {
+      "label": "Aiden Shop",
+      "desc": "Created by Racing_Aiden",
+      "x": "-12082.5",
+      "y": "77.0",
+      "z": "-11411.5",
+      "dial": "aidenshop"
+    },
+    "52": {
+      "label": "Maple Shop",
+      "desc": "Shop created by BicolourMaple48",
+      "x": "-17782.5",
+      "y": "162.0",
+      "z": "-10120.5",
+      "dial": "mapleshop"
+    },
+    "53": {
+      "label": "Padar Shop",
+      "desc": "Created by Its_Padar",
+      "x": "-16452.5",
+      "y": "63.0",
+      "z": "-12461.5",
+      "dial": "padarshop"
+    },
+    "54": {
+      "label": "Paul Mall",
+      "desc": "Created by uncle_paul. Dial reactivated by Doozie. Mall no longer works, perhaps due to sign data loss",
+      "x": "7953.5",
+      "y": "65.0",
+      "z": "4286.5",
+      "dial": "paulmall"
+    },
+    "55": {
+      "label": "Dane Shop",
+      "desc": "Created by jonashou. Dial reactivated by Doozie",
+      "x": "7631.5",
+      "y": "65.0",
+      "z": "3881.5",
+      "dial": "Daneshop"
+    },
+    "56": {
+      "label": "Kip Shop",
+      "desc": "shop built by King_Mudkip",
+      "x": "-2835.5",
+      "y": "67.0",
+      "z": "-11010.5",
+      "dial": "kipshop"
+    },
+    "57": {
+      "label": "iperal",
+      "desc": "fungo128k n sofia_g_11 shop",
+      "x": "-19784.5",
+      "y": "64.0",
+      "z": "-15786.5",
+      "dial": "iperal"
+    },
+    "58": {
+      "label": "Geode Shop",
+      "desc": "Created by Aiden_64",
+      "x": "-12472.5",
+      "y": "-42.0",
+      "z": "-11455.5",
+      "dial": "geode"
+    },
+    "59": {
+      "label": "roboshop",
+      "desc": "",
+      "x": "8193.5",
+      "y": "104.0",
+      "z": "-17530.5",
+      "dial": "roboshop"
+    },
+    "61": {
+      "label": "trishop",
+      "desc": "",
+      "x": "-10626.5",
+      "y": "110.0",
+      "z": "-13794.5",
+      "dial": "trishop"
+    },
+    "62": {
+      "label": "Eniuu Shop",
+      "desc": "",
+      "x": "-19048.5",
+      "y": "63.0",
+      "z": "-10080.5",
+      "dial": "eniuushop"
+    },
+    "63": {
+      "label": "BajShop",
+      "desc": "Bajan Shop",
+      "x": "-9217.5",
+      "y": "-56.0",
+      "z": "-19687.5",
+      "dial": "bajshop"
+    },
+    "64": {
+      "label": "Ordawnia Markets",
+      "desc": "",
+      "x": "-14691.5",
+      "y": "93.0",
+      "z": "-11637.5",
+      "dial": "OrdawniaMarkets"
+    },
+    "65": {
+      "label": "watershop",
+      "desc": "",
+      "x": "-14822.5",
+      "y": "69.0",
+      "z": "16282.5",
+      "dial": "watershop"
+    },
+    "66": {
+      "label": "Amyshop",
+      "desc": "",
+      "x": "18908.5",
+      "y": "75.0",
+      "z": "-12285.5",
+      "dial": "amyshop"
+    }
+  }
 }
