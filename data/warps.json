@@ -33,22 +33,6 @@
       "z": "-10052.5",
       "dial": "pig"
     },
-    "5": {
-      "label": "casino",
-      "desc": "",
-      "x": "-18935.5",
-      "y": "83.0",
-      "z": "-17019.5",
-      "dial": "casino"
-    },
-    "6": {
-      "label": "westspawn",
-      "desc": "",
-      "x": "7677.5",
-      "y": "65.0",
-      "z": "4060.5",
-      "dial": "westspawn"
-    },
     "7": {
       "label": "sam",
       "desc": "",
@@ -80,14 +64,6 @@
       "y": "80.0",
       "z": "1029.5",
       "dial": "krtree"
-    },
-    "11": {
-      "label": "modtopia",
-      "desc": "",
-      "x": "6635.5",
-      "y": "71.0",
-      "z": "-4276.5",
-      "dial": "modtopia"
     },
     "12": {
       "label": "cr",
@@ -145,14 +121,6 @@
       "z": "-5754.5",
       "dial": "aidan"
     },
-    "19": {
-      "label": "ice-f",
-      "desc": "",
-      "x": "-45.5",
-      "y": "73.0",
-      "z": "-17873.5",
-      "dial": "ice-f"
-    },
     "20": {
       "label": "cattbridge",
       "desc": "",
@@ -160,14 +128,6 @@
       "y": "98.0",
       "z": "2022.5",
       "dial": "cattbridge"
-    },
-    "21": {
-      "label": "sell",
-      "desc": "",
-      "x": "-12094.5",
-      "y": "70.0",
-      "z": "14143.5",
-      "dial": "sell"
     },
     "22": {
       "label": "cobble",
@@ -184,14 +144,6 @@
       "y": "56.0",
       "z": "-11693.5",
       "dial": "lecirque"
-    },
-    "24": {
-      "label": "spidertrap",
-      "desc": "",
-      "x": "190.5",
-      "y": "35.0",
-      "z": "-4112.5",
-      "dial": "spidertrap"
     },
     "25": {
       "label": "villageport",
@@ -281,14 +233,6 @@
       "z": "-6234.5",
       "dial": "oldbulk"
     },
-    "36": {
-      "label": "ccity",
-      "desc": "",
-      "x": "9481.5",
-      "y": "74.0",
-      "z": "-14606.5",
-      "dial": "ccity"
-    },
     "37": {
       "label": "tommy2",
       "desc": "",
@@ -304,14 +248,6 @@
       "y": "67.0",
       "z": "7783.5",
       "dial": "cs10"
-    },
-    "39": {
-      "label": "wyattkm",
-      "desc": "",
-      "x": "858.5",
-      "y": "70.0",
-      "z": "-5386.5",
-      "dial": "wyattkm"
     },
     "40": {
       "label": "pawnshop",
@@ -481,22 +417,6 @@
       "z": "9060.5",
       "dial": "house"
     },
-    "61": {
-      "label": "novyland",
-      "desc": "",
-      "x": "-15493.5",
-      "y": "67.0",
-      "z": "-15264.5",
-      "dial": "novyland"
-    },
-    "62": {
-      "label": "edin",
-      "desc": "",
-      "x": "-3918.5",
-      "y": "71.0",
-      "z": "-11096.5",
-      "dial": "edin"
-    },
     "63": {
       "label": "wacon2",
       "desc": "",
@@ -504,14 +424,6 @@
       "y": "69.0",
       "z": "-4701.5",
       "dial": "wacon2"
-    },
-    "64": {
-      "label": "feesh",
-      "desc": "",
-      "x": "-18275.5",
-      "y": "39.0",
-      "z": "11928.5",
-      "dial": "feesh"
     },
     "65": {
       "label": "bringmilk",
@@ -529,14 +441,6 @@
       "z": "-15562.5",
       "dial": "kfc"
     },
-    "67": {
-      "label": "7spawn",
-      "desc": "",
-      "x": "5989.5",
-      "y": "77.0",
-      "z": "5889.5",
-      "dial": "7spawn"
-    },
     "68": {
       "label": "blake8",
       "desc": "",
@@ -544,22 +448,6 @@
       "y": "80.0",
       "z": "3588.5",
       "dial": "blake8"
-    },
-    "69": {
-      "label": "marienburg",
-      "desc": "",
-      "x": "-1784.5",
-      "y": "72.0",
-      "z": "-4049.5",
-      "dial": "marienburg"
-    },
-    "70": {
-      "label": "mtb",
-      "desc": "",
-      "x": "9287.5",
-      "y": "77.0",
-      "z": "337.5",
-      "dial": "mtb"
     },
     "71": {
       "label": "food",
@@ -633,14 +521,6 @@
       "z": "4401.5",
       "dial": "cave"
     },
-    "80": {
-      "label": "asgard",
-      "desc": "",
-      "x": "-3800.5",
-      "y": "90.0",
-      "z": "-8715.5",
-      "dial": "asgard"
-    },
     "81": {
       "label": "w_newyork",
       "desc": "",
@@ -689,22 +569,6 @@
       "z": "17684.5",
       "dial": "cooket"
     },
-    "87": {
-      "label": "shpoobase",
-      "desc": "",
-      "x": "-8691.5",
-      "y": "133.0",
-      "z": "9380.5",
-      "dial": "shpoobase"
-    },
-    "88": {
-      "label": "destiny",
-      "desc": "",
-      "x": "-679.5",
-      "y": "71.0",
-      "z": "1020.5",
-      "dial": "destiny"
-    },
     "89": {
       "label": "adam",
       "desc": "",
@@ -712,14 +576,6 @@
       "y": "78.0",
       "z": "-10904.5",
       "dial": "adam"
-    },
-    "90": {
-      "label": "gnrm",
-      "desc": "",
-      "x": "10000.5",
-      "y": "76.0",
-      "z": "-12089.5",
-      "dial": "gnrm"
     },
     "91": {
       "label": "sh",
@@ -761,22 +617,6 @@
       "z": "-61.5",
       "dial": "bunnyfarm"
     },
-    "96": {
-      "label": "19k19k",
-      "desc": "",
-      "x": "-18991.5",
-      "y": "65.0",
-      "z": "-18999.5",
-      "dial": "19k19k"
-    },
-    "97": {
-      "label": "camelot",
-      "desc": "",
-      "x": "35.5",
-      "y": "73.0",
-      "z": "-5561.5",
-      "dial": "camelot"
-    },
     "98": {
       "label": "djwool1",
       "desc": "",
@@ -785,38 +625,6 @@
       "z": "4777.5",
       "dial": "djwool1"
     },
-    "99": {
-      "label": "sandcity",
-      "desc": "",
-      "x": "2104.5",
-      "y": "70.0",
-      "z": "-54.5",
-      "dial": "sandcity"
-    },
-    "100": {
-      "label": "herobrine",
-      "desc": "",
-      "x": "-1555.5",
-      "y": "70.0",
-      "z": "728.5",
-      "dial": "herobrine"
-    },
-    "101": {
-      "label": "dogtown",
-      "desc": "",
-      "x": "-13123.5",
-      "y": "73.0",
-      "z": "-2411.5",
-      "dial": "dogtown"
-    },
-    "102": {
-      "label": "mineshaft",
-      "desc": "",
-      "x": "50.5",
-      "y": "-50.0",
-      "z": "5016.5",
-      "dial": "mineshaft"
-    },
     "103": {
       "label": "manicmine#",
       "desc": "",
@@ -824,14 +632,6 @@
       "y": "13.0",
       "z": "-14043.5",
       "dial": "manicmine#"
-    },
-    "104": {
-      "label": "gmall",
-      "desc": "",
-      "x": "4346.5",
-      "y": "57.0",
-      "z": "18753.5",
-      "dial": "gmall"
     },
     "105": {
       "label": "secret",
@@ -945,22 +745,6 @@
       "z": "7802.5",
       "dial": "cow"
     },
-    "119": {
-      "label": "pvpcity",
-      "desc": "",
-      "x": "-3793.5",
-      "y": "70.0",
-      "z": "-1633.5",
-      "dial": "pvpcity"
-    },
-    "120": {
-      "label": "museum",
-      "desc": "",
-      "x": "-1683.5",
-      "y": "87.0",
-      "z": "-6818.5",
-      "dial": "museum"
-    },
     "121": {
       "label": "keysangelo",
       "desc": "",
@@ -993,14 +777,6 @@
       "z": "-2485.5",
       "dial": "ussnewyork"
     },
-    "125": {
-      "label": "tigerlily",
-      "desc": "",
-      "x": "-7221.5",
-      "y": "96.0",
-      "z": "-10632.5",
-      "dial": "tigerlily"
-    },
     "126": {
       "label": "tomcrtr\u0027s",
       "desc": "",
@@ -1008,14 +784,6 @@
       "y": "51.0",
       "z": "-3091.5",
       "dial": "tomcrtr\u0027s"
-    },
-    "127": {
-      "label": "hotchkiss",
-      "desc": "",
-      "x": "-4189.5",
-      "y": "73.0",
-      "z": "-5342.5",
-      "dial": "hotchkiss"
     },
     "128": {
       "label": "tanntower",
@@ -1056,14 +824,6 @@
       "y": "68.0",
       "z": "19439.5",
       "dial": "tristar2"
-    },
-    "133": {
-      "label": "acer",
-      "desc": "",
-      "x": "-1746.5",
-      "y": "73.0",
-      "z": "-2026.5",
-      "dial": "acer"
     },
     "134": {
       "label": "tibbswater",
@@ -1129,14 +889,6 @@
       "z": "11086.5",
       "dial": "kna2"
     },
-    "142": {
-      "label": "shadowfort",
-      "desc": "",
-      "x": "7493.5",
-      "y": "64.0",
-      "z": "4040.5",
-      "dial": "shadowfort"
-    },
     "143": {
       "label": "kotl",
       "desc": "",
@@ -1185,14 +937,6 @@
       "z": "-4925.5",
       "dial": "blueshroom"
     },
-    "149": {
-      "label": "casino1",
-      "desc": "",
-      "x": "16119.5",
-      "y": "47.0",
-      "z": "-16647.5",
-      "dial": "casino1"
-    },
     "150": {
       "label": "banoi",
       "desc": "",
@@ -1209,22 +953,6 @@
       "z": "-12032.5",
       "dial": "53"
     },
-    "152": {
-      "label": "arcadetown",
-      "desc": "",
-      "x": "6375.5",
-      "y": "73.0",
-      "z": "-4971.5",
-      "dial": "arcadetown"
-    },
-    "153": {
-      "label": "sirach",
-      "desc": "",
-      "x": "2900.5",
-      "y": "31.0",
-      "z": "-2521.5",
-      "dial": "sirach"
-    },
     "154": {
       "label": "willfancy",
       "desc": "",
@@ -1233,14 +961,6 @@
       "z": "5891.5",
       "dial": "willfancy"
     },
-    "155": {
-      "label": "everycraft",
-      "desc": "",
-      "x": "-16983.5",
-      "y": "73.0",
-      "z": "15681.5",
-      "dial": "everycraft"
-    },
     "156": {
       "label": "g-c",
       "desc": "",
@@ -1248,14 +968,6 @@
       "y": "73.0",
       "z": "-2205.5",
       "dial": "g-c"
-    },
-    "157": {
-      "label": "abyss",
-      "desc": "",
-      "x": "-7724.5",
-      "y": "71.0",
-      "z": "11214.5",
-      "dial": "abyss"
     },
     "158": {
       "label": "krst",
@@ -1297,14 +1009,6 @@
       "z": "2872.5",
       "dial": "minecraftia"
     },
-    "163": {
-      "label": "conbeck29",
-      "desc": "",
-      "x": "744.5",
-      "y": "65.0",
-      "z": "-6105.5",
-      "dial": "conbeck29"
-    },
     "164": {
       "label": "jareds",
       "desc": "",
@@ -1313,14 +1017,6 @@
       "z": "5904.5",
       "dial": "jareds"
     },
-    "165": {
-      "label": "modvillage",
-      "desc": "",
-      "x": "1513.5",
-      "y": "50.0",
-      "z": "7670.5",
-      "dial": "modvillage"
-    },
     "166": {
       "label": "vault",
       "desc": "",
@@ -1328,30 +1024,6 @@
       "y": "40.0",
       "z": "9398.5",
       "dial": "vault"
-    },
-    "167": {
-      "label": "minerstown",
-      "desc": "",
-      "x": "386.5",
-      "y": "72.0",
-      "z": "7141.5",
-      "dial": "minerstown"
-    },
-    "168": {
-      "label": "cliftan",
-      "desc": "",
-      "x": "4113.5",
-      "y": "85.0",
-      "z": "2142.5",
-      "dial": "cliftan"
-    },
-    "169": {
-      "label": "mohica",
-      "desc": "",
-      "x": "-1033.5",
-      "y": "56.0",
-      "z": "-1414.5",
-      "dial": "mohica"
     },
     "170": {
       "label": "town-s",
@@ -1369,30 +1041,6 @@
       "z": "-14313.5",
       "dial": "spawn3-f"
     },
-    "172": {
-      "label": "aether",
-      "desc": "",
-      "x": "-760.5",
-      "y": "201.0",
-      "z": "1912.5",
-      "dial": "aether"
-    },
-    "173": {
-      "label": "krmt",
-      "desc": "",
-      "x": "-4254.5",
-      "y": "113.0",
-      "z": "17647.5",
-      "dial": "krmt"
-    },
-    "174": {
-      "label": "dirtopolis",
-      "desc": "",
-      "x": "-8665.5",
-      "y": "69.0",
-      "z": "-1837.5",
-      "dial": "dirtopolis"
-    },
     "175": {
       "label": "castle",
       "desc": "",
@@ -1400,22 +1048,6 @@
       "y": "65.0",
       "z": "2910.5",
       "dial": "castle"
-    },
-    "176": {
-      "label": "1spawn",
-      "desc": "",
-      "x": "48.5",
-      "y": "65.0",
-      "z": "-1.5",
-      "dial": "1spawn"
-    },
-    "177": {
-      "label": "cavern",
-      "desc": "",
-      "x": "1379.5",
-      "y": "17.0",
-      "z": "565.5",
-      "dial": "cavern"
     },
     "178": {
       "label": "arin3",
@@ -1433,14 +1065,6 @@
       "z": "-807.5",
       "dial": "chrome2"
     },
-    "180": {
-      "label": "fm",
-      "desc": "",
-      "x": "-7722.5",
-      "y": "73.0",
-      "z": "-691.5",
-      "dial": "fm"
-    },
     "181": {
       "label": "davismine",
       "desc": "",
@@ -1456,14 +1080,6 @@
       "y": "66.0",
       "z": "4957.5",
       "dial": "getclay"
-    },
-    "183": {
-      "label": "logging",
-      "desc": "",
-      "x": "5948.5",
-      "y": "70.0",
-      "z": "18962.5",
-      "dial": "logging"
     },
     "184": {
       "label": "mall",
@@ -1521,14 +1137,6 @@
       "z": "-7075.5",
       "dial": "sumphouse"
     },
-    "191": {
-      "label": "w_island",
-      "desc": "",
-      "x": "-8267.5",
-      "y": "82.0",
-      "z": "-5142.5",
-      "dial": "w_island"
-    },
     "192": {
       "label": "pitoshop",
       "desc": "",
@@ -1545,14 +1153,6 @@
       "z": "-792.5",
       "dial": "cglo"
     },
-    "194": {
-      "label": "hell",
-      "desc": "",
-      "x": "-4060.5",
-      "y": "46.0",
-      "z": "788.5",
-      "dial": "hell"
-    },
     "195": {
       "label": "nostalgia",
       "desc": "",
@@ -1561,38 +1161,6 @@
       "z": "-2581.5",
       "dial": "nostalgia"
     },
-    "196": {
-      "label": "ckingdom",
-      "desc": "",
-      "x": "-2362.5",
-      "y": "116.0",
-      "z": "-10429.5",
-      "dial": "ckingdom"
-    },
-    "197": {
-      "label": "mangapoop",
-      "desc": "",
-      "x": "710.5",
-      "y": "64.0",
-      "z": "-6054.5",
-      "dial": "mangapoop"
-    },
-    "198": {
-      "label": "bolitown",
-      "desc": "",
-      "x": "6130.5",
-      "y": "67.0",
-      "z": "6096.5",
-      "dial": "bolitown"
-    },
-    "199": {
-      "label": "saintm",
-      "desc": "",
-      "x": "-7818.5",
-      "y": "63.0",
-      "z": "7899.5",
-      "dial": "saintm"
-    },
     "200": {
       "label": "99",
       "desc": "",
@@ -1600,22 +1168,6 @@
       "y": "45.0",
       "z": "5593.5",
       "dial": "99"
-    },
-    "201": {
-      "label": "waterside",
-      "desc": "",
-      "x": "-1403.5",
-      "y": "77.0",
-      "z": "-126.5",
-      "dial": "waterside"
-    },
-    "202": {
-      "label": "javaslayer",
-      "desc": "",
-      "x": "-8160.5",
-      "y": "77.0",
-      "z": "-10078.5",
-      "dial": "javaslayer"
     },
     "203": {
       "label": "krtreehouse",
@@ -1633,14 +1185,6 @@
       "z": "-12771.5",
       "dial": "blocks"
     },
-    "205": {
-      "label": "oldroad",
-      "desc": "",
-      "x": "1361.5",
-      "y": "66.0",
-      "z": "-1958.5",
-      "dial": "oldroad"
-    },
     "206": {
       "label": "arin",
       "desc": "",
@@ -1648,14 +1192,6 @@
       "y": "68.0",
       "z": "-1906.5",
       "dial": "arin"
-    },
-    "207": {
-      "label": "amsterdam",
-      "desc": "",
-      "x": "3035.5",
-      "y": "72.0",
-      "z": "-690.5",
-      "dial": "amsterdam"
     },
     "208": {
       "label": "sea",
@@ -1665,14 +1201,6 @@
       "z": "-14187.5",
       "dial": "sea"
     },
-    "209": {
-      "label": "empirerose",
-      "desc": "",
-      "x": "-2241.5",
-      "y": "67.0",
-      "z": "-115.5",
-      "dial": "empirerose"
-    },
     "210": {
       "label": "reed-f",
       "desc": "",
@@ -1680,14 +1208,6 @@
       "y": "65.0",
       "z": "-14257.5",
       "dial": "reed-f"
-    },
-    "211": {
-      "label": "miceland",
-      "desc": "",
-      "x": "8100.5",
-      "y": "70.0",
-      "z": "-13893.5",
-      "dial": "miceland"
     },
     "212": {
       "label": "rbods",
@@ -1785,14 +1305,6 @@
       "z": "-5.5",
       "dial": "nether"
     },
-    "224": {
-      "label": "mallarchive",
-      "desc": "",
-      "x": "178.5",
-      "y": "56.0",
-      "z": "-3420.5",
-      "dial": "mallarchive"
-    },
     "225": {
       "label": "lobsgate",
       "desc": "",
@@ -1800,14 +1312,6 @@
       "y": "65.0",
       "z": "-4507.5",
       "dial": "lobsgate"
-    },
-    "226": {
-      "label": "static",
-      "desc": "",
-      "x": "-10144.5",
-      "y": "73.0",
-      "z": "7869.5",
-      "dial": "static"
     },
     "227": {
       "label": "junglebiome",
@@ -1833,14 +1337,6 @@
       "z": "-12351.5",
       "dial": "j"
     },
-    "230": {
-      "label": "kittykibble",
-      "desc": "",
-      "x": "-4493.5",
-      "y": "114.0",
-      "z": "-5152.5",
-      "dial": "kittykibble"
-    },
     "231": {
       "label": "peacopia",
       "desc": "",
@@ -1849,14 +1345,6 @@
       "z": "7389.5",
       "dial": "peacopia"
     },
-    "232": {
-      "label": "holiday",
-      "desc": "",
-      "x": "10204.5",
-      "y": "68.0",
-      "z": "-12315.5",
-      "dial": "holiday"
-    },
     "233": {
       "label": "iceruins-f",
       "desc": "",
@@ -1864,14 +1352,6 @@
       "y": "64.0",
       "z": "-17925.5",
       "dial": "iceruins-f"
-    },
-    "234": {
-      "label": "snowville",
-      "desc": "",
-      "x": "333.5",
-      "y": "91.0",
-      "z": "-275.5",
-      "dial": "snowville"
     },
     "235": {
       "label": "bunny",
@@ -1921,14 +1401,6 @@
       "z": "3907.5",
       "dial": "shadow-shop"
     },
-    "241": {
-      "label": "taco-base",
-      "desc": "",
-      "x": "1019.5",
-      "y": "63.0",
-      "z": "8423.5",
-      "dial": "taco-base"
-    },
     "242": {
       "label": "end",
       "desc": "",
@@ -1936,14 +1408,6 @@
       "y": "48.0",
       "z": "3963.5",
       "dial": "end"
-    },
-    "243": {
-      "label": "kish",
-      "desc": "",
-      "x": "-858.5",
-      "y": "60.0",
-      "z": "-4647.5",
-      "dial": "kish"
     },
     "244": {
       "label": "branchmine",
@@ -1969,14 +1433,6 @@
       "z": "4184.5",
       "dial": "cheehouse"
     },
-    "247": {
-      "label": "aurora",
-      "desc": "",
-      "x": "-10274.5",
-      "y": "175.0",
-      "z": "7999.5",
-      "dial": "aurora"
-    },
     "248": {
       "label": "coral",
       "desc": "",
@@ -1984,14 +1440,6 @@
       "y": "80.0",
       "z": "-17866.5",
       "dial": "coral"
-    },
-    "249": {
-      "label": "89-tower",
-      "desc": "",
-      "x": "8511.5",
-      "y": "63.0",
-      "z": "5984.5",
-      "dial": "89-tower"
     },
     "250": {
       "label": "squidland",
@@ -2017,46 +1465,6 @@
       "z": "3510.5",
       "dial": "doubledash"
     },
-    "253": {
-      "label": "lief",
-      "desc": "",
-      "x": "-8152.5",
-      "y": "72.0",
-      "z": "9590.5",
-      "dial": "lief"
-    },
-    "254": {
-      "label": "rainbowcity",
-      "desc": "",
-      "x": "-6189.5",
-      "y": "71.0",
-      "z": "16454.5",
-      "dial": "rainbowcity"
-    },
-    "255": {
-      "label": "seafall",
-      "desc": "",
-      "x": "-7588.5",
-      "y": "68.0",
-      "z": "-1908.5",
-      "dial": "seafall"
-    },
-    "256": {
-      "label": "home",
-      "desc": "",
-      "x": "8292.5",
-      "y": "104.0",
-      "z": "4125.5",
-      "dial": "home"
-    },
-    "257": {
-      "label": "kingbush",
-      "desc": "",
-      "x": "-1500.5",
-      "y": "65.0",
-      "z": "-1948.5",
-      "dial": "kingbush"
-    },
     "258": {
       "label": "adstrohome",
       "desc": "",
@@ -2064,14 +1472,6 @@
       "y": "64.0",
       "z": "6944.5",
       "dial": "adstrohome"
-    },
-    "259": {
-      "label": "littleland",
-      "desc": "",
-      "x": "9578.5",
-      "y": "67.0",
-      "z": "2067.5",
-      "dial": "littleland"
     },
     "260": {
       "label": "jamestown",
@@ -2129,22 +1529,6 @@
       "z": "4650.5",
       "dial": "wintercity"
     },
-    "267": {
-      "label": "10k10k",
-      "desc": "",
-      "x": "9991.5",
-      "y": "45.0",
-      "z": "10000.5",
-      "dial": "10k10k"
-    },
-    "268": {
-      "label": "oldbescart",
-      "desc": "",
-      "x": "-8465.5",
-      "y": "72.0",
-      "z": "-285.5",
-      "dial": "oldbescart"
-    },
     "269": {
       "label": "naherehouse",
       "desc": "",
@@ -2168,30 +1552,6 @@
       "y": "13.0",
       "z": "8994.5",
       "dial": "potato"
-    },
-    "272": {
-      "label": "3spawn",
-      "desc": "",
-      "x": "-4041.5",
-      "y": "68.0",
-      "z": "410.5",
-      "dial": "3spawn"
-    },
-    "273": {
-      "label": "roseland2",
-      "desc": "",
-      "x": "3797.5",
-      "y": "65.0",
-      "z": "1756.5",
-      "dial": "roseland2"
-    },
-    "274": {
-      "label": "woll",
-      "desc": "",
-      "x": "-389.5",
-      "y": "72.0",
-      "z": "-2163.5",
-      "dial": "woll"
     },
     "275": {
       "label": "bolimob",
@@ -2241,14 +1601,6 @@
       "z": "8478.5",
       "dial": "murkybridge"
     },
-    "281": {
-      "label": "2spawn",
-      "desc": "",
-      "x": "-2074.5",
-      "y": "65.0",
-      "z": "-23.5",
-      "dial": "2spawn"
-    },
     "282": {
       "label": "q",
       "desc": "",
@@ -2256,22 +1608,6 @@
       "y": "65.0",
       "z": "-13295.5",
       "dial": "q"
-    },
-    "283": {
-      "label": "mntc",
-      "desc": "",
-      "x": "-7274.5",
-      "y": "65.0",
-      "z": "-821.5",
-      "dial": "mntc"
-    },
-    "284": {
-      "label": "redmine",
-      "desc": "",
-      "x": "10040.5",
-      "y": "64.0",
-      "z": "-13600.5",
-      "dial": "redmine"
     },
     "285": {
       "label": "pumpkin",
@@ -2296,14 +1632,6 @@
       "y": "37.0",
       "z": "-1939.5",
       "dial": "outtemple"
-    },
-    "288": {
-      "label": "antfarm",
-      "desc": "",
-      "x": "905.5",
-      "y": "66.0",
-      "z": "175.5",
-      "dial": "antfarm"
     },
     "289": {
       "label": "orkmonument",
@@ -2368,14 +1696,6 @@
       "y": "24.0",
       "z": "-5604.5",
       "dial": "tommymine"
-    },
-    "297": {
-      "label": "andyhawk",
-      "desc": "",
-      "x": "289.5",
-      "y": "89.0",
-      "z": "-4724.5",
-      "dial": "andyhawk"
     },
     "298": {
       "label": "rh",
@@ -2457,14 +1777,6 @@
       "z": "8414.5",
       "dial": "bunnyshroom"
     },
-    "308": {
-      "label": "8spawn",
-      "desc": "",
-      "x": "7728.5",
-      "y": "68.0",
-      "z": "3962.5",
-      "dial": "8spawn"
-    },
     "309": {
       "label": "kipb1",
       "desc": "",
@@ -2481,22 +1793,6 @@
       "z": "-1907.5",
       "dial": "mobble"
     },
-    "311": {
-      "label": "spawnport",
-      "desc": "",
-      "x": "9983.5",
-      "y": "66.0",
-      "z": "-12183.5",
-      "dial": "spawnport"
-    },
-    "312": {
-      "label": "97",
-      "desc": "",
-      "x": "1229.5",
-      "y": "73.0",
-      "z": "-6034.5",
-      "dial": "97"
-    },
     "313": {
       "label": "tommy",
       "desc": "",
@@ -2504,14 +1800,6 @@
       "y": "89.0",
       "z": "-5630.5",
       "dial": "tommy"
-    },
-    "314": {
-      "label": "10spawn",
-      "desc": "",
-      "x": "-8023.5",
-      "y": "73.0",
-      "z": "7981.5",
-      "dial": "10spawn"
     },
     "315": {
       "label": "greatden",
@@ -2528,14 +1816,6 @@
       "y": "168.0",
       "z": "-4975.5",
       "dial": "waconiadisk"
-    },
-    "317": {
-      "label": "krvillage",
-      "desc": "",
-      "x": "-6276.5",
-      "y": "69.0",
-      "z": "17113.5",
-      "dial": "krvillage"
     },
     "318": {
       "label": "treehouse",
@@ -2561,14 +1841,6 @@
       "z": "-2324.5",
       "dial": "st-parkey"
     },
-    "321": {
-      "label": "ccow",
-      "desc": "",
-      "x": "-9852.5",
-      "y": "64.0",
-      "z": "8469.5",
-      "dial": "ccow"
-    },
     "322": {
       "label": "ninesfox",
       "desc": "",
@@ -2593,14 +1865,6 @@
       "z": "10015.5",
       "dial": "jlc-cave"
     },
-    "325": {
-      "label": "bolitemp",
-      "desc": "",
-      "x": "-8628.5",
-      "y": "89.0",
-      "z": "8517.5",
-      "dial": "bolitemp"
-    },
     "326": {
       "label": "derphouse",
       "desc": "",
@@ -2608,14 +1872,6 @@
       "y": "108.0",
       "z": "4050.5",
       "dial": "derphouse"
-    },
-    "327": {
-      "label": "4spawn",
-      "desc": "",
-      "x": "38.5",
-      "y": "68.0",
-      "z": "-3816.5",
-      "dial": "4spawn"
     },
     "328": {
       "label": "dogtemplate",
@@ -2640,14 +1896,6 @@
       "y": "46.0",
       "z": "-11383.5",
       "dial": "kipb2"
-    },
-    "331": {
-      "label": "twie",
-      "desc": "",
-      "x": "-3713.5",
-      "y": "120.0",
-      "z": "-3685.5",
-      "dial": "twie"
     },
     "332": {
       "label": "base-jk",
@@ -2721,22 +1969,6 @@
       "z": "-4159.5",
       "dial": "getgold"
     },
-    "341": {
-      "label": "new",
-      "desc": "",
-      "x": "-15654.5",
-      "y": "69.0",
-      "z": "-7505.5",
-      "dial": "new"
-    },
-    "342": {
-      "label": "bunnycastle",
-      "desc": "",
-      "x": "10793.5",
-      "y": "65.0",
-      "z": "-73.5",
-      "dial": "bunnycastle"
-    },
     "343": {
       "label": "skyshop",
       "desc": "",
@@ -2768,30 +2000,6 @@
       "y": "99.0",
       "z": "-2407.5",
       "dial": "wood2"
-    },
-    "347": {
-      "label": "adventure",
-      "desc": "",
-      "x": "1729.5",
-      "y": "65.0",
-      "z": "-5770.5",
-      "dial": "adventure"
-    },
-    "348": {
-      "label": "w72",
-      "desc": "",
-      "x": "-19929.5",
-      "y": "65.0",
-      "z": "2453.5",
-      "dial": "w72"
-    },
-    "349": {
-      "label": "spar",
-      "desc": "",
-      "x": "7843.5",
-      "y": "74.0",
-      "z": "7371.5",
-      "dial": "spar"
     },
     "350": {
       "label": "ssgmanor",
@@ -2897,38 +2105,6 @@
       "z": "-18217.5",
       "dial": "kipwitch"
     },
-    "363": {
-      "label": "celestrium",
-      "desc": "",
-      "x": "-9352.5",
-      "y": "80.0",
-      "z": "-490.5",
-      "dial": "celestrium"
-    },
-    "364": {
-      "label": "novylenia",
-      "desc": "",
-      "x": "5963.5",
-      "y": "74.0",
-      "z": "8347.5",
-      "dial": "novylenia"
-    },
-    "365": {
-      "label": "twintowers",
-      "desc": "",
-      "x": "-1693.5",
-      "y": "69.0",
-      "z": "-8937.5",
-      "dial": "twintowers"
-    },
-    "366": {
-      "label": "monument",
-      "desc": "",
-      "x": "11922.5",
-      "y": "45.0",
-      "z": "-14715.5",
-      "dial": "monument"
-    },
     "367": {
       "label": "mburg-tower",
       "desc": "",
@@ -2952,14 +2128,6 @@
       "y": "67.0",
       "z": "3506.5",
       "dial": "traestown"
-    },
-    "370": {
-      "label": "stargate",
-      "desc": "",
-      "x": "-7390.5",
-      "y": "19.0",
-      "z": "-813.5",
-      "dial": "stargate"
     },
     "371": {
       "label": "dogmine",
@@ -3009,22 +2177,6 @@
       "z": "-6821.5",
       "dial": "santiago"
     },
-    "377": {
-      "label": "11spawn",
-      "desc": "",
-      "x": "-9961.5",
-      "y": "71.0",
-      "z": "8009.5",
-      "dial": "11spawn"
-    },
-    "378": {
-      "label": "thefallen",
-      "desc": "",
-      "x": "598.5",
-      "y": "116.0",
-      "z": "-2169.5",
-      "dial": "thefallen"
-    },
     "379": {
       "label": "drimsion",
       "desc": "",
@@ -3049,22 +2201,6 @@
       "z": "6868.5",
       "dial": "fungeon"
     },
-    "382": {
-      "label": "hapan",
-      "desc": "",
-      "x": "1182.5",
-      "y": "64.0",
-      "z": "7885.5",
-      "dial": "hapan"
-    },
-    "383": {
-      "label": "time",
-      "desc": "",
-      "x": "-11099.5",
-      "y": "300.0",
-      "z": "13269.5",
-      "dial": "time"
-    },
     "384": {
       "label": "fortress",
       "desc": "",
@@ -3073,14 +2209,6 @@
       "z": "-14406.5",
       "dial": "fortress"
     },
-    "385": {
-      "label": "winterset",
-      "desc": "",
-      "x": "-8296.5",
-      "y": "189.0",
-      "z": "-5827.5",
-      "dial": "winterset"
-    },
     "386": {
       "label": "jail",
       "desc": "",
@@ -3088,14 +2216,6 @@
       "y": "-40.0",
       "z": "-17580.5",
       "dial": "jail"
-    },
-    "387": {
-      "label": "sable-city",
-      "desc": "",
-      "x": "-9919.5",
-      "y": "69.0",
-      "z": "-4530.5",
-      "dial": "sable-city"
     },
     "388": {
       "label": "shitshack",
@@ -3112,14 +2232,6 @@
       "y": "68.0",
       "z": "-10754.5",
       "dial": "wraeth"
-    },
-    "390": {
-      "label": "will3",
-      "desc": "",
-      "x": "1493.5",
-      "y": "81.0",
-      "z": "-6405.5",
-      "dial": "will3"
     },
     "391": {
       "label": "winter",
@@ -3161,14 +2273,6 @@
       "z": "-3378.5",
       "dial": "wat-8u"
     },
-    "396": {
-      "label": "wv",
-      "desc": "",
-      "x": "-9841.5",
-      "y": "76.0",
-      "z": "222.5",
-      "dial": "wv"
-    },
     "397": {
       "label": "nicky",
       "desc": "",
@@ -3176,22 +2280,6 @@
       "y": "65.0",
       "z": "6383.5",
       "dial": "nicky"
-    },
-    "398": {
-      "label": "llama",
-      "desc": "",
-      "x": "-439.5",
-      "y": "66.0",
-      "z": "-4884.5",
-      "dial": "llama"
-    },
-    "399": {
-      "label": "traceadam",
-      "desc": "",
-      "x": "1221.5",
-      "y": "64.0",
-      "z": "-6367.5",
-      "dial": "traceadam"
     },
     "400": {
       "label": "min",
@@ -3225,14 +2313,6 @@
       "z": "714.5",
       "dial": "krskele"
     },
-    "404": {
-      "label": "market",
-      "desc": "",
-      "x": "-16030.5",
-      "y": "75.0",
-      "z": "-15563.5",
-      "dial": "market"
-    },
     "405": {
       "label": "knr2",
       "desc": "",
@@ -3249,14 +2329,6 @@
       "z": "-964.5",
       "dial": "havlock"
     },
-    "407": {
-      "label": "castlevilla",
-      "desc": "",
-      "x": "-19203.5",
-      "y": "72.0",
-      "z": "11312.5",
-      "dial": "castlevilla"
-    },
     "408": {
       "label": "derp",
       "desc": "",
@@ -3264,14 +2336,6 @@
       "y": "64.0",
       "z": "5418.5",
       "dial": "derp"
-    },
-    "409": {
-      "label": "terraria",
-      "desc": "",
-      "x": "1158.5",
-      "y": "32.0",
-      "z": "-4502.5",
-      "dial": "terraria"
     },
     "410": {
       "label": "jamieker-f",
@@ -3337,14 +2401,6 @@
       "z": "9194.5",
       "dial": "flatbrick"
     },
-    "418": {
-      "label": "moonbase",
-      "desc": "",
-      "x": "8755.5",
-      "y": "240.0",
-      "z": "3247.5",
-      "dial": "moonbase"
-    },
     "419": {
       "label": "minemart",
       "desc": "",
@@ -3352,30 +2408,6 @@
       "y": "64.0",
       "z": "-3968.5",
       "dial": "minemart"
-    },
-    "420": {
-      "label": "tropical",
-      "desc": "",
-      "x": "-7617.5",
-      "y": "64.0",
-      "z": "-888.5",
-      "dial": "tropical"
-    },
-    "421": {
-      "label": "sernship",
-      "desc": "",
-      "x": "7114.5",
-      "y": "86.0",
-      "z": "6752.5",
-      "dial": "sernship"
-    },
-    "422": {
-      "label": "farnorth",
-      "desc": "",
-      "x": "-19999.5",
-      "y": "64.0",
-      "z": "-0.5",
-      "dial": "farnorth"
     },
     "423": {
       "label": "wasteland",
@@ -3449,14 +2481,6 @@
       "z": "-5828.5",
       "dial": "crazyhouse1"
     },
-    "432": {
-      "label": "roseland",
-      "desc": "",
-      "x": "-2140.5",
-      "y": "36.0",
-      "z": "-3874.5",
-      "dial": "roseland"
-    },
     "433": {
       "label": "white-f",
       "desc": "",
@@ -3472,22 +2496,6 @@
       "y": "62.0",
       "z": "-6476.5",
       "dial": "bs"
-    },
-    "435": {
-      "label": "kotbritons",
-      "desc": "",
-      "x": "-2938.5",
-      "y": "71.0",
-      "z": "-6067.5",
-      "dial": "kotbritons"
-    },
-    "436": {
-      "label": "dogstar",
-      "desc": "",
-      "x": "-2236.5",
-      "y": "218.0",
-      "z": "941.5",
-      "dial": "dogstar"
     },
     "437": {
       "label": "golf",
@@ -3537,14 +2545,6 @@
       "z": "1053.5",
       "dial": "empire"
     },
-    "443": {
-      "label": "summerhome",
-      "desc": "",
-      "x": "-4161.5",
-      "y": "65.0",
-      "z": "836.5",
-      "dial": "summerhome"
-    },
     "444": {
       "label": "tocreeper",
       "desc": "",
@@ -3552,14 +2552,6 @@
       "y": "33.0",
       "z": "-9680.5",
       "dial": "tocreeper"
-    },
-    "445": {
-      "label": "cvillage",
-      "desc": "",
-      "x": "-9944.5",
-      "y": "84.0",
-      "z": "8180.5",
-      "dial": "cvillage"
     },
     "446": {
       "label": "blue",
@@ -3617,14 +2609,6 @@
       "z": "-3409.5",
       "dial": "hi"
     },
-    "453": {
-      "label": "9spawn",
-      "desc": "",
-      "x": "-7392.5",
-      "y": "74.0",
-      "z": "-793.5",
-      "dial": "9spawn"
-    },
     "454": {
       "label": "umu",
       "desc": "",
@@ -3640,14 +2624,6 @@
       "y": "18.0",
       "z": "1648.5",
       "dial": "skychad"
-    },
-    "456": {
-      "label": "bescart",
-      "desc": "",
-      "x": "-1742.5",
-      "y": "71.0",
-      "z": "-6476.5",
-      "dial": "bescart"
     },
     "457": {
       "label": "top-f",
@@ -3689,14 +2665,6 @@
       "z": "385.5",
       "dial": "davstecity"
     },
-    "462": {
-      "label": "ml",
-      "desc": "",
-      "x": "7871.5",
-      "y": "68.0",
-      "z": "-13831.5",
-      "dial": "ml"
-    },
     "463": {
       "label": "boliruin",
       "desc": "",
@@ -3737,14 +2705,6 @@
       "z": "9256.5",
       "dial": "89-shop"
     },
-    "468": {
-      "label": "sarczone",
-      "desc": "",
-      "x": "10094.5",
-      "y": "90.0",
-      "z": "-13148.5",
-      "dial": "sarczone"
-    },
     "469": {
       "label": "cisland",
       "desc": "",
@@ -3769,22 +2729,6 @@
       "z": "5579.5",
       "dial": "wales"
     },
-    "472": {
-      "label": "ledrew",
-      "desc": "",
-      "x": "8843.5",
-      "y": "69.0",
-      "z": "3079.5",
-      "dial": "ledrew"
-    },
-    "473": {
-      "label": "cupquake",
-      "desc": "",
-      "x": "-2289.5",
-      "y": "72.0",
-      "z": "-4187.5",
-      "dial": "cupquake"
-    },
     "474": {
       "label": "fishzone",
       "desc": "",
@@ -3792,14 +2736,6 @@
       "y": "41.0",
       "z": "-19744.5",
       "dial": "fishzone"
-    },
-    "475": {
-      "label": "taco",
-      "desc": "",
-      "x": "7797.5",
-      "y": "64.0",
-      "z": "4565.5",
-      "dial": "taco"
     },
     "476": {
       "label": "tommysnow",
@@ -3840,14 +2776,6 @@
       "y": "64.0",
       "z": "1772.5",
       "dial": "wood"
-    },
-    "481": {
-      "label": "pepe",
-      "desc": "",
-      "x": "-18951.5",
-      "y": "87.0",
-      "z": "-16844.5",
-      "dial": "pepe"
     },
     "482": {
       "label": "sam4hockey",
@@ -3897,14 +2825,6 @@
       "z": "-19691.5",
       "dial": "betheball"
     },
-    "488": {
-      "label": "krmesa",
-      "desc": "",
-      "x": "-10551.5",
-      "y": "89.0",
-      "z": "11351.5",
-      "dial": "krmesa"
-    },
     "489": {
       "label": "getrods",
       "desc": "",
@@ -3912,14 +2832,6 @@
       "y": "80.0",
       "z": "1705.5",
       "dial": "getrods"
-    },
-    "490": {
-      "label": "shalls",
-      "desc": "",
-      "x": "9682.5",
-      "y": "93.0",
-      "z": "7413.5",
-      "dial": "shalls"
     },
     "491": {
       "label": "mikehouse",
@@ -3936,22 +2848,6 @@
       "y": "62.0",
       "z": "18528.5",
       "dial": "baal"
-    },
-    "493": {
-      "label": "oldnether",
-      "desc": "",
-      "x": "-4079.5",
-      "y": "16.0",
-      "z": "717.5",
-      "dial": "oldnether"
-    },
-    "494": {
-      "label": "krosroads",
-      "desc": "",
-      "x": "-858.5",
-      "y": "95.0",
-      "z": "59.5",
-      "dial": "krosroads"
     },
     "495": {
       "label": "nssc",
@@ -3977,14 +2873,6 @@
       "z": "1225.5",
       "dial": "vvnore"
     },
-    "498": {
-      "label": "spiral",
-      "desc": "",
-      "x": "-8087.5",
-      "y": "133.0",
-      "z": "7846.5",
-      "dial": "spiral"
-    },
     "499": {
       "label": "beta",
       "desc": "",
@@ -3992,14 +2880,6 @@
       "y": "77.0",
       "z": "-1410.5",
       "dial": "beta"
-    },
-    "500": {
-      "label": "saurville",
-      "desc": "",
-      "x": "11938.5",
-      "y": "64.0",
-      "z": "3131.5",
-      "dial": "saurville"
     },
     "501": {
       "label": "wacontemp",
@@ -4025,14 +2905,6 @@
       "z": "-15027.5",
       "dial": "undercity"
     },
-    "504": {
-      "label": "teaville",
-      "desc": "",
-      "x": "-9911.5",
-      "y": "56.0",
-      "z": "7966.5",
-      "dial": "teaville"
-    },
     "505": {
       "label": "willswamp",
       "desc": "",
@@ -4040,14 +2912,6 @@
       "y": "54.0",
       "z": "592.5",
       "dial": "willswamp"
-    },
-    "506": {
-      "label": "bdth2",
-      "desc": "",
-      "x": "-15686.5",
-      "y": "72.0",
-      "z": "-1346.5",
-      "dial": "bdth2"
     },
     "507": {
       "label": "water_park",
@@ -4081,14 +2945,6 @@
       "z": "-10617.5",
       "dial": "orkturtle"
     },
-    "511": {
-      "label": "arynn",
-      "desc": "",
-      "x": "10011.5",
-      "y": "68.0",
-      "z": "-11946.5",
-      "dial": "arynn"
-    },
     "512": {
       "label": "monument-f",
       "desc": "",
@@ -4096,14 +2952,6 @@
       "y": "65.0",
       "z": "18193.5",
       "dial": "monument-f"
-    },
-    "513": {
-      "label": "olympus",
-      "desc": "",
-      "x": "93.5",
-      "y": "72.0",
-      "z": "-4329.5",
-      "dial": "olympus"
     },
     "514": {
       "label": "join98",
@@ -4137,14 +2985,6 @@
       "z": "-16201.5",
       "dial": "stockland"
     },
-    "518": {
-      "label": "spirea",
-      "desc": "",
-      "x": "-12953.5",
-      "y": "107.0",
-      "z": "9498.5",
-      "dial": "spirea"
-    },
     "519": {
       "label": "mushrome",
       "desc": "",
@@ -4152,14 +2992,6 @@
       "y": "65.0",
       "z": "8183.5",
       "dial": "mushrome"
-    },
-    "520": {
-      "label": "jungledark",
-      "desc": "",
-      "x": "1845.5",
-      "y": "94.0",
-      "z": "8138.5",
-      "dial": "jungledark"
     },
     "521": {
       "label": "sparta",
@@ -4217,14 +3049,6 @@
       "z": "1553.5",
       "dial": "blake15shop"
     },
-    "528": {
-      "label": "paragon",
-      "desc": "",
-      "x": "1240.5",
-      "y": "63.0",
-      "z": "-2335.5",
-      "dial": "paragon"
-    },
     "529": {
       "label": "funds",
       "desc": "",
@@ -4240,22 +3064,6 @@
       "y": "73.0",
       "z": "-5705.5",
       "dial": "pitofarm"
-    },
-    "531": {
-      "label": "6spawn",
-      "desc": "",
-      "x": "-164.5",
-      "y": "59.0",
-      "z": "-2811.5",
-      "dial": "6spawn"
-    },
-    "532": {
-      "label": "alexandria",
-      "desc": "",
-      "x": "-1635.5",
-      "y": "67.0",
-      "z": "-9282.5",
-      "dial": "alexandria"
     },
     "533": {
       "label": "underfort",
@@ -4312,22 +3120,6 @@
       "y": "67.0",
       "z": "2014.5",
       "dial": "rainbowc"
-    },
-    "540": {
-      "label": "stockville",
-      "desc": "",
-      "x": "-1402.5",
-      "y": "64.0",
-      "z": "-14315.5",
-      "dial": "stockville"
-    },
-    "541": {
-      "label": "5spawn",
-      "desc": "",
-      "x": "-2113.5",
-      "y": "68.0",
-      "z": "-1893.5",
-      "dial": "5spawn"
     },
     "542": {
       "label": "krcave",
@@ -4545,22 +3337,6 @@
       "z": "-3839.5",
       "dial": "tundra"
     },
-    "569": {
-      "label": "hourglass",
-      "desc": "",
-      "x": "-1846.5",
-      "y": "69.0",
-      "z": "-887.5",
-      "dial": "hourglass"
-    },
-    "570": {
-      "label": "dack",
-      "desc": "",
-      "x": "1292.5",
-      "y": "66.0",
-      "z": "8344.5",
-      "dial": "dack"
-    },
     "571": {
       "label": "wh1rlhouse",
       "desc": "",
@@ -4601,14 +3377,6 @@
       "z": "5875.5",
       "dial": "lochie"
     },
-    "576": {
-      "label": "sebfroosh",
-      "desc": "",
-      "x": "867.5",
-      "y": "65.0",
-      "z": "-970.5",
-      "dial": "sebfroosh"
-    },
     "577": {
       "label": "rbos",
       "desc": "",
@@ -4617,14 +3385,6 @@
       "z": "-11220.5",
       "dial": "rbos"
     },
-    "578": {
-      "label": "westguard",
-      "desc": "",
-      "x": "4229.5",
-      "y": "69.0",
-      "z": "5901.5",
-      "dial": "westguard"
-    },
     "579": {
       "label": "smearbranch",
       "desc": "",
@@ -4632,14 +3392,6 @@
       "y": "10.0",
       "z": "6200.5",
       "dial": "smearbranch"
-    },
-    "580": {
-      "label": "outpost",
-      "desc": "",
-      "x": "14378.5",
-      "y": "58.0",
-      "z": "-12713.5",
-      "dial": "outpost"
     },
     "581": {
       "label": "spawn2-f",
@@ -4721,14 +3473,6 @@
       "z": "4649.5",
       "dial": "the_pound"
     },
-    "591": {
-      "label": "pieville",
-      "desc": "",
-      "x": "-3843.5",
-      "y": "73.0",
-      "z": "-1821.5",
-      "dial": "pieville"
-    },
     "592": {
       "label": "monument2-f",
       "desc": "",
@@ -4753,14 +3497,6 @@
       "z": "9661.5",
       "dial": "belfry"
     },
-    "595": {
-      "label": "smooshdog",
-      "desc": "",
-      "x": "7402.5",
-      "y": "67.0",
-      "z": "4315.5",
-      "dial": "smooshdog"
-    },
     "596": {
       "label": "mobplace",
       "desc": "",
@@ -4769,22 +3505,6 @@
       "z": "-3627.5",
       "dial": "mobplace"
     },
-    "597": {
-      "label": "clarion",
-      "desc": "",
-      "x": "-8360.5",
-      "y": "70.0",
-      "z": "-5988.5",
-      "dial": "clarion"
-    },
-    "598": {
-      "label": "arco",
-      "desc": "",
-      "x": "-8622.5",
-      "y": "65.0",
-      "z": "-7357.5",
-      "dial": "arco"
-    },
     "599": {
       "label": "stock-f",
       "desc": "",
@@ -4792,22 +3512,6 @@
       "y": "64.0",
       "z": "-14352.5",
       "dial": "stock-f"
-    },
-    "600": {
-      "label": "lotus-arco",
-      "desc": "",
-      "x": "-6721.5",
-      "y": "89.0",
-      "z": "-5272.5",
-      "dial": "lotus-arco"
-    },
-    "601": {
-      "label": "horselook",
-      "desc": "",
-      "x": "-7904.5",
-      "y": "69.0",
-      "z": "-9587.5",
-      "dial": "horselook"
     },
     "602": {
       "label": "botmid-f",
@@ -4857,22 +3561,6 @@
       "z": "6212.5",
       "dial": "smeargle"
     },
-    "608": {
-      "label": "unicorn",
-      "desc": "",
-      "x": "-7953.5",
-      "y": "62.0",
-      "z": "-16489.5",
-      "dial": "unicorn"
-    },
-    "609": {
-      "label": "flattown",
-      "desc": "",
-      "x": "941.5",
-      "y": "66.0",
-      "z": "12.5",
-      "dial": "flattown"
-    },
     "610": {
       "label": "solympus",
       "desc": "",
@@ -4889,22 +3577,6 @@
       "z": "3545.5",
       "dial": "diamondhaul"
     },
-    "612": {
-      "label": "pink",
-      "desc": "",
-      "x": "-18129.5",
-      "y": "71.0",
-      "z": "-13374.5",
-      "dial": "pink"
-    },
-    "613": {
-      "label": "ironfist",
-      "desc": "",
-      "x": "-346.5",
-      "y": "73.0",
-      "z": "-4305.5",
-      "dial": "ironfist"
-    },
     "614": {
       "label": "purestcity",
       "desc": "",
@@ -4920,14 +3592,6 @@
       "y": "71.0",
       "z": "-5889.5",
       "dial": "fairfax"
-    },
-    "616": {
-      "label": "industry-f",
-      "desc": "",
-      "x": "-1792.5",
-      "y": "69.0",
-      "z": "-14121.5",
-      "dial": "industry-f"
     },
     "617": {
       "label": "minetown",
@@ -4960,14 +3624,6 @@
       "y": "64.0",
       "z": "-3136.5",
       "dial": "mt2"
-    },
-    "621": {
-      "label": "tristar",
-      "desc": "",
-      "x": "5400.5",
-      "y": "62.0",
-      "z": "19423.5",
-      "dial": "tristar"
     },
     "622": {
       "label": "9079843464",
@@ -5025,14 +3681,6 @@
       "z": "-14469.5",
       "dial": "books-f"
     },
-    "629": {
-      "label": "12spawn",
-      "desc": "",
-      "x": "9993.5",
-      "y": "99.0",
-      "z": "-12145.5",
-      "dial": "12spawn"
-    },
     "630": {
       "label": "capital",
       "desc": "",
@@ -5048,14 +3696,6 @@
       "y": "24.0",
       "z": "-14268.5",
       "dial": "ghastbois-f"
-    },
-    "632": {
-      "label": "mansion",
-      "desc": "",
-      "x": "9652.5",
-      "y": "66.0",
-      "z": "4472.5",
-      "dial": "mansion"
     },
     "633": {
       "label": "sern-stow",
@@ -5105,22 +3745,6 @@
       "z": "1244.5",
       "dial": "comic-tree"
     },
-    "639": {
-      "label": "manch",
-      "desc": "",
-      "x": "14270.5",
-      "y": "64.0",
-      "z": "-19218.5",
-      "dial": "manch"
-    },
-    "640": {
-      "label": "village",
-      "desc": "",
-      "x": "773.5",
-      "y": "70.0",
-      "z": "7496.5",
-      "dial": "village"
-    },
     "641": {
       "label": "ofarm",
       "desc": "",
@@ -5128,14 +3752,6 @@
       "y": "12.0",
       "z": "9670.5",
       "dial": "ofarm"
-    },
-    "642": {
-      "label": "kamotown",
-      "desc": "",
-      "x": "-2127.5",
-      "y": "72.0",
-      "z": "-4353.5",
-      "dial": "kamotown"
     },
     "643": {
       "label": "rbfarm",
@@ -5145,14 +3761,6 @@
       "z": "-5706.5",
       "dial": "rbfarm"
     },
-    "644": {
-      "label": "skyland",
-      "desc": "",
-      "x": "-1351.5",
-      "y": "92.0",
-      "z": "1541.5",
-      "dial": "skyland"
-    },
     "645": {
       "label": "bush",
       "desc": "",
@@ -5160,22 +3768,6 @@
       "y": "66.0",
       "z": "-9290.5",
       "dial": "bush"
-    },
-    "646": {
-      "label": "breeding1",
-      "desc": "",
-      "x": "-11875.5",
-      "y": "63.0",
-      "z": "8362.5",
-      "dial": "breeding1"
-    },
-    "647": {
-      "label": "aquabunny",
-      "desc": "",
-      "x": "10836.5",
-      "y": "56.0",
-      "z": "-552.5",
-      "dial": "aquabunny"
     },
     "648": {
       "label": "bot-f",
@@ -5201,14 +3793,6 @@
       "z": "-1170.5",
       "dial": "jlcresp"
     },
-    "651": {
-      "label": "atlantis",
-      "desc": "",
-      "x": "679.5",
-      "y": "25.0",
-      "z": "-572.5",
-      "dial": "atlantis"
-    },
     "652": {
       "label": "trade",
       "desc": "",
@@ -5216,14 +3800,6 @@
       "y": "70.0",
       "z": "3402.5",
       "dial": "trade"
-    },
-    "653": {
-      "label": "hgarden",
-      "desc": "",
-      "x": "-2006.5",
-      "y": "65.0",
-      "z": "-8368.5",
-      "dial": "hgarden"
     },
     "654": {
       "label": "nicktree",
@@ -5265,14 +3841,6 @@
       "z": "-5943.5",
       "dial": "t3"
     },
-    "659": {
-      "label": "cvilla",
-      "desc": "",
-      "x": "9743.5",
-      "y": "71.0",
-      "z": "-12243.5",
-      "dial": "cvilla"
-    },
     "660": {
       "label": "skyville",
       "desc": "",
@@ -5280,14 +3848,6 @@
       "y": "114.0",
       "z": "2500.5",
       "dial": "skyville"
-    },
-    "661": {
-      "label": "farpoint",
-      "desc": "",
-      "x": "10901.5",
-      "y": "65.0",
-      "z": "-3797.5",
-      "dial": "farpoint"
     },
     "662": {
       "label": "sslayer",
@@ -5337,14 +3897,6 @@
       "z": "-2146.5",
       "dial": "foodshop"
     },
-    "668": {
-      "label": "toc",
-      "desc": "",
-      "x": "-6974.5",
-      "y": "65.0",
-      "z": "-9663.5",
-      "dial": "toc"
-    },
     "669": {
       "label": "bulk",
       "desc": "",
@@ -5352,22 +3904,6 @@
       "y": "84.0",
       "z": "-6491.5",
       "dial": "bulk"
-    },
-    "670": {
-      "label": "drcastle",
-      "desc": "",
-      "x": "-2129.5",
-      "y": "67.0",
-      "z": "639.5",
-      "dial": "drcastle"
-    },
-    "671": {
-      "label": "ginoiudici",
-      "desc": "",
-      "x": "-3271.5",
-      "y": "69.0",
-      "z": "-2017.5",
-      "dial": "ginoiudici"
     },
     "672": {
       "label": "ft",
@@ -5400,14 +3936,6 @@
       "y": "14.0",
       "z": "5895.5",
       "dial": "loxville"
-    },
-    "676": {
-      "label": "shop",
-      "desc": "",
-      "x": "-12155.5",
-      "y": "70.0",
-      "z": "14143.5",
-      "dial": "shop"
     },
     "677": {
       "label": "redmesa",
@@ -5457,14 +3985,6 @@
       "z": "-3227.5",
       "dial": "thegardens"
     },
-    "683": {
-      "label": "boat",
-      "desc": "",
-      "x": "11300.5",
-      "y": "69.0",
-      "z": "-13612.5",
-      "dial": "boat"
-    },
     "684": {
       "label": "nnw_shore",
       "desc": "",
@@ -5489,14 +4009,6 @@
       "z": "-6429.5",
       "dial": "creeper"
     },
-    "687": {
-      "label": "paradise",
-      "desc": "",
-      "x": "11584.5",
-      "y": "79.0",
-      "z": "1110.5",
-      "dial": "paradise"
-    },
     "688": {
       "label": "autosc",
       "desc": "",
@@ -5505,14 +4017,6 @@
       "z": "-274.5",
       "dial": "autosc"
     },
-    "689": {
-      "label": "gatorsville",
-      "desc": "",
-      "x": "8729.5",
-      "y": "64.0",
-      "z": "3495.5",
-      "dial": "gatorsville"
-    },
     "690": {
       "label": "kr",
       "desc": "",
@@ -5520,14 +4024,6 @@
       "y": "69.0",
       "z": "1069.5",
       "dial": "kr"
-    },
-    "691": {
-      "label": "farawayland",
-      "desc": "",
-      "x": "-9288.5",
-      "y": "65.0",
-      "z": "3036.5",
-      "dial": "farawayland"
     },
     "692": {
       "label": "stone",
