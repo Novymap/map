@@ -329,14 +329,6 @@
       "z": "-13947.5",
       "dial": "getcherry cw"
     },
-    "42": {
-      "label": "Cthulhuland CTR",
-      "desc": "Cthulhuland Farming District",
-      "x": "-13250.5",
-      "y": "89.0",
-      "z": "5188.5",
-      "dial": "CTR"
-    },
     "43": {
       "label": "Public Mine",
       "desc": "I guess its a farm\r\nBuild created by Hunter512_\r\nDial Provided by rilelyscastle. Terminus of Cthulhu Mine Tround",
