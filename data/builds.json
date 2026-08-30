@@ -1448,15 +1448,7 @@
       "y": "-27.0",
       "z": "338.5",
       "dial": "stronghold"
-    },
-    "183": {
-      "label": "Fallenstar End",
-      "desc": "",
-      "x": "4715.5",
-      "y": "33.0",
-      "z": "16613.5",
-      "dial": "fallenstarend"
-    },
+    }
     "184": {
       "label": "Valley Of Stone",
       "desc": "",
