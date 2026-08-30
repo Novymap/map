@@ -672,6 +672,14 @@
       "y": "312",
       "z": "9711.5",
       "dial": "getcat"
+    },
+    "86": {
+      "label": "Highacre",
+      "desc": "Created by GiantLion11. Dial created by Doozie",
+      "x": "-4599.5",
+      "y": "71.0",
+      "z": "-16664.5",
+      "dial": "highacre"
     }
   }
 }
