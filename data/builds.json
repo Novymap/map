@@ -345,14 +345,6 @@
       "z": "-115.5",
       "dial": "empirerose"
     },
-    "44": {
-      "label": "Highacre",
-      "desc": "Created by GiantLion11. Dial created by Doozie",
-      "x": "-4599.5",
-      "y": "71.0",
-      "z": "-16664.5",
-      "dial": "highacre"
-    },
     "45": {
       "label": "Chaotica",
       "desc": "Owned by Gossinger. Population: 22",
@@ -12616,6 +12608,126 @@
       "y": "107",
       "z": "5366.5",
       "dial": "sc"
+    },
+    "1578": {
+      "label": "ut9",
+      "desc": "UnlikelyRyan",
+      "x": "-12921.5",
+      "y": "74",
+      "z": "11705.5",
+      "dial": "ut9"
+    },
+    "1579": {
+      "label": "ut10",
+      "desc": "UnlikelyRyan",
+      "x": "3700.5",
+      "y": "78",
+      "z": "-16930.5",
+      "dial": "ut10"
+    },
+    "1580": {
+      "label": "tootopia",
+      "desc": "RooT_A_TooT",
+      "x": "-14904.5",
+      "y": "86",
+      "z": "-9099.5",
+      "dial": "tootopia"
+    },
+    "1581": {
+      "label": "axolotl",
+      "desc": "Ellerian",
+      "x": "-11195.5",
+      "y": "66",
+      "z": "-18902.5",
+      "dial": "axolotl"
+    },
+    "1582": {
+      "label": "ut3",
+      "desc": "UnlikelyRyan",
+      "x": "4805.5",
+      "y": "87",
+      "z": "-5211.5",
+      "dial": "ut3"
+    },
+    "1583": {
+      "label": "ut4",
+      "desc": "UnlikelyRyan",
+      "x": "6043.5",
+      "y": "109",
+      "z": "-6354.5",
+      "dial": "ut4"
+    },
+    "1584": {
+      "label": "ut5",
+      "desc": "UnlikelyRyan",
+      "x": "3079.5",
+      "y": "98",
+      "z": "-10448.5",
+      "dial": "ut5"
+    },
+    "1585": {
+      "label": "ut6",
+      "desc": "UnlikelyRyan",
+      "x": "5449.5",
+      "y": "74",
+      "z": "-11494.5",
+      "dial": "ut6"
+    },
+    "1586": {
+      "label": "ut7",
+      "desc": "UnlikelyRyan",
+      "x": "7783.5",
+      "y": "68",
+      "z": "-11559.5",
+      "dial": "ut7"
+    },
+    "1587": {
+      "label": "ut8",
+      "desc": "UnlikelyRyan",
+      "x": "6235.5",
+      "y": "82",
+      "z": "-19696.5",
+      "dial": "ut8"
+    },
+    "1588": {
+      "label": "pptown",
+      "desc": "iluvlilacc",
+      "x": "-11837.5",
+      "y": "88",
+      "z": "15942.5",
+      "dial": "pptown"
+    },
+    "1589": {
+      "label": "ryanshope",
+      "desc": "ChiefMc___",
+      "x": "-12351.5",
+      "y": "71",
+      "z": "15480.5",
+      "dial": "ryanshope"
+    },
+    "1590": {
+      "label": "arctichome",
+      "desc": "Arcticforever",
+      "x": "-12456.5",
+      "y": "73",
+      "z": "15451.5",
+      "dial": "arctichome"
+    },
+    "1591": {
+      "label": "opuf",
+      "desc": "_catmail",
+      "x": "-17192.5",
+      "y": "1",
+      "z": "-7616.5",
+      "dial": "opuf"
+    },
+    "1592": {
+      "label": "everest",
+      "desc": "ASTR0WORLD",
+      "x": "9549.5",
+      "y": "142",
+      "z": "11614.5",
+      "dial": "everest"
     }
   }
 }
